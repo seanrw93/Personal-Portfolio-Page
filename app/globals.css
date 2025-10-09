@@ -1,26 +1,77 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    /* Global styles */
+    --primary-text: #1a202c;
+    --primary-bg: #f9fafb;
+    --base-white: #fff;
+
+    --opacity-40: 0.4;
+    --opacity-80: 0.8;
+
+    --z-max: 999;
+
+    --backdrop-blur: 0.5rem;
+    --shadow-black-subtle: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+
+    /* Background circle styles */
+    --circle-size: 31.25rem;
+    --circle-size-wider: 50rem;
+    --circle-size-sm: 68.75rem;
+    --circle-blur: 10rem;
+
+    --circle-pink: #fbe2e3;
+    --circle-purple: #dbd7fb;
+
+    --circle-offset-top: -6rem;
+    --circle-offset-left: -35rem;
+    --circle-offset-right: 11rem;
+
+    --circle-offset-left-md: -33rem;
+    --circle-offset-left-lg: -28rem;
+    --circle-offset-left-xl: -15rem;
+    --circle-offset-left-2xl: -5rem;
+
+    /* Header styles */ 
+    --header-height: 4.5rem;
+    --header-top-sm: 1.5rem;
+    --header-height-sm: 3.25rem;
+    --header-width-sm: 36rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer components {
+    .background-circle {
+        @apply absolute top-circle-offset-top -z-10 h-circle rounded-full blur-circle;
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    .background-circle--pink {
+        @apply bg-circle-pink right-circle-offset-right w-circle 
+                sm:w-circle-sm;
+    }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    .background-circle--purple {
+        @apply bg-circle-purple left-circle-offset-left w-circle-wider 
+                md:left-circle-offset-left-md lg:left-circle-offset-left-lg 
+                xl:left-circle-offset-left-xl 2xl:left-circle-offset-left-2xl
+                sm:w-circle-sm;
+    }
+
+    .header-container {
+        @apply z-max relative;
+
+        .header-nav {
+            @apply fixed top-0 left-1/2 h-header-height -translate-x-1/2 w-full rounded-none 
+                border-base-white border-opacity-40 bg-base-white bg-opacity-80 
+                shadow-subtle backdrop-blur-backdrop 
+                sm:top-6 sm:h-header-height-sm sm:w-header-width-sm sm:rounded-full;
+
+        }
+
+        .header-nav__content {
+            @apply fixed top-[0.15rem] left-1/2 -translate-x-1/2 h-[12] w-full py-2
+                sm:top-[1.7rem] sm:h-[initial] sm:py-0;    
+        }
+    }
 }

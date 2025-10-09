@@ -1,0 +1,12 @@
+{
+    "common": {
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "projects": "Projects",
+            "skills": "Skills",
+            "experience": "Experience",
+            "contact": "Contact"
+        }
+    }
+}

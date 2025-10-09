@@ -1,0 +1,12 @@
+{
+    "common": {
+        "nav": {
+            "home": "Accueil",
+            "about": "À propos",
+            "projects": "Projets",
+            "skills": "Compétences",
+            "experience": "Expérience",
+            "contact": "Contact"
+        }
+    }
+}
