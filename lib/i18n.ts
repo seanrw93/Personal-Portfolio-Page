@@ -1,8 +1,10 @@
 import type { Translations } from '@/types/translations';
+import enTranslations from '@/locales/en/common.json';
+import frTranslations from '@/locales/fr/common.json';
 
 export const translations: Record<'en' | 'fr', Translations> = {
-  en: require('@/locales/en/common.json'),
-  fr: require('@/locales/fr/common.json'),
+  en: enTranslations,
+  fr: frTranslations,
 };
 
 export const getTranslation = (locale: string): Translations => {
