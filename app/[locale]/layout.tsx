@@ -22,15 +22,18 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function RootLayout({
+interface RootLayoutProps {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}
+
+export default async function RootLayout({
   children,
   params
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
+}: Readonly<RootLayoutProps>) {
+  const { locale } = await params;
   return (
-    <html lang={params.locale} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${inter.className} bg-primary-bg text-primary-text relative antialiased`}
       >

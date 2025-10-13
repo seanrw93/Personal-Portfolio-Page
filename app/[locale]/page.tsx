@@ -1,9 +1,12 @@
 import { Intro } from "@/components/Intro";
 
-export default function Home() {
+const Page = () => {
+  
   return (
     <main className="main-wrapper">
       <Intro />
     </main>
   );
-}
+};
+
+export default Page;
