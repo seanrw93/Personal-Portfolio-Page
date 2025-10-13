@@ -1,4 +1,4 @@
-type CommonsTranslations = {
+type CommonTranslations = {
   nav: {
     home: string;
     about: string;
@@ -7,8 +7,33 @@ type CommonsTranslations = {
     experience: string;
     contact: string;
   };
+  hero: {
+    welcome: string;
+    intro: TIntro;
+    cta: string;
+  },
+  btn: {
+    contactMe: string;
+    downloadCv: string;
+  },
+  url: {
+    linkedin: string;
+    cv: string;
+  },
+  aria: {
+    header: Header
+  }
 };
 
+type Intro = {
+  [key: string]: string | string[];
+}
+
+type Header = {
+  navigation: string;
+  link: string;
+}
+
 export type Translations = {
-  common: CommonsTranslations;
+  common: CommonTranslations;
 }

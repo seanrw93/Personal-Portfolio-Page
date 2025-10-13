@@ -1,12 +1,40 @@
 {
-    "common": {
-        "nav": {
-            "home": "Accueil",
-            "about": "À propos",
-            "projects": "Projets",
-            "skills": "Compétences",
-            "experience": "Expérience",
-            "contact": "Contact"
-        }
+  "common": {
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "projects": "Projets",
+      "skills": "Compétences",
+      "experience": "Expérience",
+      "contact": "Contact"
+    },
+    "hero": {
+      "welcome": "Bienvenue sur mon portfolio",
+      "intro": {
+        "name": "je suis Sean",
+        "greeting": "Bienvenue sur mon site portfolio personnel.",
+        "rolePrefix": "Je suis un",
+        "role": "Développeur Front-end",
+        "specialisedIn": "spécialisé dans les",
+        "description": "interfaces web accessibles, responsives et modulaires.",
+        "focus": "Mon focus est"
+      },
+      "cta": "Découvrez Mon Travail",
+      "cvUrl": "/files/CV__ROENNAU-WERGEN_SEAN_fr.pdf"
+    },
+    "btn": {
+      "contactMe": "Contactez-moi ici",
+      "downloadCv": "Télécharger mon CV"
+    },
+    "url": {
+      "cv": "/files/CV__ROENNAU-WERGEN_SEAN_fr.pdf",
+      "linkedin": "https://www.linkedin.com/in/sean-roennau-wergen/fr"
+    },
+    "aria": {
+      "header": {
+        "navigation": "Navigation Principale",
+        "link": "Naviguer vers la section {{section}}"
+      }
     }
+  }
 }

@@ -1,12 +1,39 @@
 {
-    "common": {
-        "nav": {
-            "home": "Home",
-            "about": "About",
-            "projects": "Projects",
-            "skills": "Skills",
-            "experience": "Experience",
-            "contact": "Contact"
-        }
+  "common": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience",
+      "contact": "Contact"
+    },
+    "hero": {
+      "welcome": "Welcome to my portfolio",
+      "intro": {
+        "name": "I'm Sean",
+        "greeting": "Welcome to my personal portfolio website.",
+        "rolePrefix": "I'm a",
+        "role": "Frontend Developer",
+        "specialisedIn": "specialised in",
+        "description": "accessible, responsive, and modular web interfaces.",
+        "focus": "My focus is"
+      },
+      "cta": "Explore My Work"
+    },
+    "btn": {
+      "contactMe": "Contact me here",
+      "downloadCv": "Download CV"
+    },
+    "url": {
+      "cv": "/files/CV__ROENNAU-WERGEN_SEAN_en.pdf",
+      "linkedin": "https://www.linkedin.com/in/sean-roennau-wergen/en"
+    },
+    "aria": {
+      "header": {
+        "navigation": "Primary Navigation",
+        "link": "Navigate to {{section}} section"
+      }
     }
+  }
 }

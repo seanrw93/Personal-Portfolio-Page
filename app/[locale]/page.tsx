@@ -1,7 +1,9 @@
+import { Intro } from "@/components/Intro";
 
 export default function Home() {
   return (
-    <main>
+    <main className="main-wrapper">
+      <Intro />
     </main>
   );
 }

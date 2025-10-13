@@ -4,12 +4,16 @@
 
 :root {
   /* Global styles */
-  --primary-text: #1a202c;
-  --primary-bg: #f9fafb;
+  --primary-blue: #3b82f6;
+  --darkest-blue: #1a202c;
+  --dark-blue: #2d3748;
+  --lightest-blue: #f9fafb;
   --base-white: #fff;
 
   --opacity-40: 0.4;
   --opacity-80: 0.8;
+
+  --border-thin: 0.5px;
 
   --z-max: 999;
 
@@ -42,13 +46,13 @@
 }
 
 @layer components {
+  /* Global styles START */
   .background-circle {
     @apply absolute top-circle-offset-top -z-10 h-circle rounded-full blur-circle;
   }
 
   .background-circle--pink {
-    @apply bg-circle-pink right-circle-offset-right w-circle 
-                sm:w-circle-sm;
+    @apply bg-circle-pink right-circle-offset-right w-circle sm:w-circle-sm;
   }
 
   .background-circle--purple {
@@ -58,15 +62,43 @@
                 sm:w-circle-sm;
   }
 
+  .btn-container {
+    @apply flex flex-col justify-center items-center space-y-4 sm:flex-row 
+                sm:space-y-0 sm:space-x-4 w-full;
+  }
+
+  .btn-primary {
+    @apply inline-block bg-darkest-blue text-base-white rounded-full px-6 
+                py-3 shadow-md w-full sm:w-auto outline-none focus:scale-110 
+                hover:scale-110 hover:bg-dark-blue active:scale-105 transition
+                cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply inline-block text-darkest-blue rounded-full px-6 py-3 bg-base-white 
+                shadow-md w-full sm:w-auto outline-none focus:scale-110 hover:scale-110 
+                hover:bg-lightest-blue active:scale-105 transition cursor-pointer;
+  }
+
+  /* Global styles END */
+
+  /* Main wrapper styles START */
+
+  .main-wrapper {
+    @apply flex flex-col items-center mt-8 sm:mt-0 px-4 sm:px-0;
+  }
+
+  /* Header styles START */
+
   .header-container {
     @apply z-max relative;
   }
 
   .header-nav {
     @apply fixed top-0 left-1/2 h-header-height -translate-x-1/2 w-full rounded-none 
-                border-base-white border-opacity-40 bg-base-white bg-opacity-80 
-                shadow-subtle backdrop-blur-backdrop 
-                sm:top-6 sm:h-header-height-sm sm:w-header-width-sm sm:rounded-full;
+                border-base-white border-opacity-40 bg-base-white opacity-80 
+                shadow-subtle sm:top-6 sm:h-header-height-sm sm:w-header-width-sm 
+                sm:rounded-full;
   }
 
   .header-nav__content {
@@ -74,11 +106,37 @@
   }
 
   .header-nav__link {
-    @apply flex h-full items-center justify-center px-2 text-sm hover:text-primary-text 
+    @apply flex h-full items-center justify-center px-2 text-sm hover:text-darkest-blue
            transition-colors duration-200 ease-in-out;
   }
 
   .header-nav__item {
     @apply h-3/4 flex items-center justify-center;
   }
+
+  /* Header styles END */
+
+  /* Intro section styles */
+
+  .intro-section {
+    @apply min-h-screen flex justify-center flex-col max-w-[50rem] mt-24 sm:mt-0;
+  }
+
+  .intro-text__heading {
+    @apply text-lg sm:text-4xl font-bold mb-4;
+  }
+
+  .intro-text__description {
+    @apply mb-10 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-2xl;
+  }
+
+  .image-container {
+    @apply flex items-center justify-center;
+  }
+
+  .profile-image {
+    @apply h-24 w-24 sm:h-48 sm:w-48 rounded-full object-cover mb-4 border-thin border-base-white shadow-xl;
+  }
+
+  /* Intro section styles END */
 }

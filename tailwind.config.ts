@@ -33,13 +33,18 @@ export default {
       colors: {
         'circle-pink': 'var(--circle-pink)',
         'circle-purple': 'var(--circle-purple)',
-        'primary-text': 'var(--primary-text)',
-        'primary-bg': 'var(--primary-bg)',
+        'primary-blue': 'var(--primary-blue)',
+        'darkest-blue': 'var(--darkest-blue)',
+        'dark-blue': 'var(--dark-blue)',
+        'lightest-blue': 'var(--lightest-blue)',
         'base-white': 'var(--base-white)',
       },
       opacity: {
         'subtle': 'var(--opacity-40)',
         'medium': 'var(--opacity-80)',
+      },
+      borderWidth: {
+        'thin': 'var(--border-thin)',
       },
       boxShadow: {
         'subtle': 'var(--shadow-black-subtle)',
