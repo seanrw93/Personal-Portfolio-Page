@@ -19,6 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: translations.meta.title,
     description: translations.meta.description,
+    viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   };
 }
 
