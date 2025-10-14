@@ -21,7 +21,7 @@ type CommonTranslations = {
     cv: string;
   },
   aria: {
-    header: Header
+    navigation: Navigation;
   }
 };
 
@@ -29,9 +29,11 @@ type Intro = {
   [key: string]: string | string[];
 }
 
-type Header = {
-  navigation: string;
+type Navigation = {
+  primary: string;
   link: string;
+  github: string;
+  linkedin: string;
 }
 
 export type Translations = {

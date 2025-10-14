@@ -8,7 +8,7 @@ import Link from "next/link";
 export const Header = () => {
   const { common } = useTranslation();
   const links = common?.nav ? Object.entries(common.nav) : [];
-  const aria = common?.aria.header;
+  const aria = common?.aria.navigation;
 
   const navLinks = links.map(([key, label], index) => (
     <motion.li
@@ -28,13 +28,13 @@ export const Header = () => {
           damping: 20,
         },
       }}
-      role="presentation"
+      tabIndex={-1}
+      role="none"
     >
       <Link
         href={`#${key}`}
         className="header-nav__link"
         aria-label={aria.link.replace('{{section}}', label.toLowerCase())}
-        tabIndex={index + 1}
       >
         {label}
       </Link>
@@ -51,12 +51,10 @@ export const Header = () => {
       >
         <nav
           className="header-nav__content"
-          aria-label={aria.navigation}
+          aria-label={aria.primary}
         >
           <ul
             className="flex w-full flex-wrap items-center justify-center gap-y-1 font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5"
-            role="presentation"
-            tabIndex={-1}
           >
             {navLinks}
           </ul>

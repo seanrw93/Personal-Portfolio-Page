@@ -31,9 +31,11 @@
       "linkedin": "https://www.linkedin.com/in/sean-roennau-wergen/fr"
     },
     "aria": {
-      "header": {
-        "navigation": "Navigation Principale",
-        "link": "Naviguer vers la section {{section}}"
+      "navigation": {
+        "primary": "Navigation Principale",
+        "link": "Naviguer vers la section {{section}}",
+        "github": "Visitez mon profil GitHub",
+        "linkedin": "Visitez mon profil LinkedIn"
       }
     }
   }
