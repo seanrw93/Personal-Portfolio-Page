@@ -69,14 +69,14 @@
 
   .btn-primary {
     @apply inline-block bg-darkest-blue text-base-white rounded-full px-6 
-                py-3 shadow-md w-full sm:w-auto outline-none focus:scale-110 
+                py-3 shadow-md w-full text-base sm:w-auto outline-none focus:scale-110 
                 hover:scale-110 hover:bg-dark-blue active:scale-105 transition
                 cursor-pointer;
   }
 
   .btn-secondary {
     @apply inline-block text-darkest-blue rounded-full px-6 py-3 bg-base-white 
-                shadow-md w-full sm:w-auto outline-none focus:scale-110 hover:scale-110 
+                shadow-md w-full text-base sm:w-auto outline-none focus:scale-110 hover:scale-110 
                 hover:bg-lightest-blue active:scale-105 transition cursor-pointer;
   }
 
@@ -119,15 +119,15 @@
   /* Intro section styles */
 
   .intro-section {
-    @apply min-h-screen flex justify-center flex-col max-w-[50rem] mt-24 sm:mt-0;
+    @apply min-h-svh sm:min-h-screen flex justify-center flex-col max-w-[50rem] mt-0 sm:mt-8 2xl:mt-0;
   }
 
   .intro-text__heading {
-    @apply text-lg sm:text-4xl font-bold mb-4;
+    @apply text-lg sm:text-3xl 2xl:text-4xl font-bold mb-4;
   }
 
   .intro-text__description {
-    @apply mb-10 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-2xl;
+    @apply mb-10 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-xl 2xl:text-2xl;
   }
 
   .image-container {
@@ -135,7 +135,7 @@
   }
 
   .profile-image {
-    @apply h-24 w-24 sm:h-48 sm:w-48 rounded-full object-cover mb-4 border-thin border-base-white shadow-xl;
+    @apply h-24 w-24 sm:h-36 sm:w-36 2xl:h-48 2xl:w-48 rounded-full object-cover mb-4 border-thin border-base-white shadow-xl;
   }
 
   /* Intro section styles END */
