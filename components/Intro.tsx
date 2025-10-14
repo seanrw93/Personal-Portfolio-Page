@@ -79,16 +79,15 @@ export const Intro = () => {
               <HiDownload className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              className="btn-secondary p-4] inline-flex items-center justify-center space-x-2"
+              className="btn-secondary p-4 inline-flex items-center justify-center space-x-2"
               href={url.linkedin}
               target="_blank"
             >
               <BsLinkedin />
             </a>
             <a
-              className="btn-secondary p-4] inline-flex items-center justify-center space-x-2"
+              className="btn-secondary p-4 inline-flex items-center justify-center space-x-2"
               href="https://github.com/seanrw93"
-              target="_blank"
             >
               <BsGithub />
             </a>
