@@ -140,8 +140,12 @@
 
   /* Intro section styles */
 
-  .intro-section {
-    @apply min-h-svh sm:min-h-screen flex justify-center flex-col max-w-[50rem] 2xl:max-w-[90rem] mt-4 sm:mt-8 2xl:mt-0;
+  .section {
+    @apply min-h-svh sm:min-h-screen flex justify-center flex-col max-w-[50rem] 2xl:max-w-[90rem];
+  }
+
+  .section--intro {
+    @apply mt-4 sm:mt-8 2xl:mt-0;
   }
 
   .intro-text__heading {

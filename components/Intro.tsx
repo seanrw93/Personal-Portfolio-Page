@@ -20,7 +20,7 @@ export const Intro = () => {
   const aria = common?.aria;
 
   return (
-    <section id="intro" className="intro-section">
+    <section id="intro" className="section section--intro">
       <div className="image-container flex flex-col items-center text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
