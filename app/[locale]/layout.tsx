@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Header } from "@/components/Header"
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -42,6 +43,7 @@ export default async function RootLayout({
         <div className="background-circle background-circle--purple"></div>
         <Header />
         {children}
+        <Analytics />
       </body>
     </html>
   );
