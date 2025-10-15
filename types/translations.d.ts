@@ -34,6 +34,7 @@ type Navigation = {
   link: string;
   github: string;
   linkedin: string;
+  scrollToTop: string;
 }
 
 export type Translations = {

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header"
+import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import { Analytics } from "@vercel/analytics/next";
@@ -10,16 +11,9 @@ const inter = Inter({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
-  const translations = {
-    meta: {
-      title: "Sean | Personal Portfolio",
-      description: "Showcasing my work and my projects as a frontend developer."
-    }
-  };
-  
   return {
-    title: translations.meta.title,
-    description: translations.meta.description,
+    title: "Sean | Portfolio",
+    description: "Showcasing my work and my projects as a frontend developer.",
     viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   };
 }
@@ -41,6 +35,7 @@ export default async function RootLayout({
       >
         <div className="background-circle background-circle--pink"></div>
         <div className="background-circle background-circle--purple"></div>
+        <ScrollToTopButton />
         <Header />
         {children}
         <Analytics />

@@ -4,7 +4,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/hooks/useTranslation";
 import Link from "next/link";
-import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
+import {
+  BsArrowRight,
+  BsArrowDown,
+  BsGithub,
+  BsLinkedin,
+} from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 
 export const Intro = () => {
@@ -12,7 +17,7 @@ export const Intro = () => {
   const hero = common?.hero;
   const btn = common?.btn;
   const url = common?.url;
-  const aria = common?.aria
+  const aria = common?.aria;
 
   return (
     <section id="intro" className="intro-section">
@@ -65,7 +70,7 @@ export const Intro = () => {
           <Link
             href="#contact"
             className="btn-primary group inline-flex items-center justify-center space-x-2"
-            aria-label={aria.navigation.link.replace('{{section}}', 'contact')}
+            aria-label={aria.navigation.link.replace("{{section}}", "contact")}
           >
             <span>{btn.contactMe}</span>
             <BsArrowRight className="group-hover:translate-x-1 transition-transform" />
@@ -94,6 +99,21 @@ export const Intro = () => {
           >
             <BsGithub />
           </a>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ type: "tween", duration: 0.5, delay: 1.2 }}
+          className="mt-4 group"
+        >
+          <Link
+            href="#about"
+            className="btn-tertiary flex flex-col sm:flex-row items-center justify-center space-x-2"
+            aria-label={aria.navigation.link.replace("{{section}}", "about")}
+          >
+            <span className="mb-4 sm:mb-0">{hero.cta}</span>
+            <BsArrowDown className="text-4xl sm:text-2xl animate-bounce group-hover:stroke-1 transition" />
+          </Link>
         </motion.div>
       </div>
     </section>

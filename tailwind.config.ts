@@ -36,6 +36,8 @@ export default {
         'primary-blue': 'var(--primary-blue)',
         'darkest-blue': 'var(--darkest-blue)',
         'dark-blue': 'var(--dark-blue)',
+        'dark-gray': 'var(--dark-gray)',
+        'base-gray': 'var(--base-gray)',
         'lightest-blue': 'var(--lightest-blue)',
         'base-white': 'var(--base-white)',
       },

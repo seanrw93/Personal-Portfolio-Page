@@ -19,7 +19,7 @@
         "description": "interfaces web accessibles, responsives et modulaires.",
         "focus": "Mon focus est"
       },
-      "cta": "Découvrez Mon Travail",
+      "cta": "Découvrez mon travail",
       "cvUrl": "/files/CV__ROENNAU-WERGEN_SEAN_fr.pdf"
     },
     "btn": {
@@ -35,7 +35,8 @@
         "primary": "Navigation Principale",
         "link": "Naviguer vers la section {{section}}",
         "github": "Visitez mon profil GitHub",
-        "linkedin": "Visitez mon profil LinkedIn"
+        "linkedin": "Visitez mon profil LinkedIn",
+        "scrollToTop": "Retour en haut"
       }
     }
   }

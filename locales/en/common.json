@@ -19,7 +19,7 @@
         "description": "accessible, responsive, and modular web interfaces.",
         "focus": "My focus is"
       },
-      "cta": "Explore My Work"
+      "cta": "Explore my work"
     },
     "btn": {
       "contactMe": "Contact me here",
@@ -34,7 +34,8 @@
         "primary": "Primary Navigation",
         "link": "Navigate to {{section}} section",
         "github": "Visit my GitHub profile",
-        "linkedin": "Visit my LinkedIn profile"
+        "linkedin": "Visit my LinkedIn profile",
+        "scrollToTop": "Scroll to top"
       }
     }
   }

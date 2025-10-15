@@ -53,9 +53,7 @@ export const Header = () => {
           className="header-nav__content"
           aria-label={aria.primary}
         >
-          <ul
-            className="flex w-full flex-wrap items-center justify-center gap-y-1 font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5"
-          >
+          <ul className="nav-list">
             {navLinks}
           </ul>
         </nav>

@@ -7,6 +7,8 @@
   --primary-blue: #3b82f6;
   --darkest-blue: #1a202c;
   --dark-blue: #2d3748;
+  --base-gray: #4b5563;
+  --dark-gray: #1a202c;
   --lightest-blue: #f9fafb;
   --base-white: #fff;
 
@@ -70,14 +72,30 @@
   .btn-primary {
     @apply inline-block bg-darkest-blue text-base-white rounded-full px-6 
                 py-3 shadow-md w-full text-base sm:w-auto outline-none focus:scale-110 
-                hover:scale-110 hover:bg-dark-blue active:scale-105 transition
-                cursor-pointer;
+                hover:scale-110 hover:bg-dark-blue transition cursor-pointer;
   }
 
   .btn-secondary {
-    @apply inline-block text-darkest-blue rounded-full px-6 py-3 bg-base-white 
-                shadow-md w-full text-base sm:w-auto outline-none focus:scale-110 hover:scale-110 
-                hover:bg-lightest-blue active:scale-105 transition cursor-pointer;
+    @apply inline-block text-base-gray rounded-full px-6 py-3 bg-base-white
+                shadow-md w-full text-base sm:w-auto outline-none border border-black/10 focus:scale-110 hover:scale-110 
+                hover:bg-lightest-blue hover:text-dark-gray transition-all cursor-pointer;
+  }
+
+  .btn-tertiary {
+    @apply inline-block text-darkest-blue rounded-full px-6 py-3 bg-transparent
+                w-full text-sm sm:w-auto outline-none underline-offset-4
+                focus:scale-110 hover:scale-110 underline decoration-dashed 
+                hover:decoration-solid hover:font-semibold transition-all cursor-pointer;
+    }
+
+  .btn-scroll-top {
+    @apply fixed bottom-6 right-6 z-max inline-block text-base-gray rounded-full p-3 bg-darkest-blue
+                shadow-md text-base-white outline-none border focus:scale-110 hover:scale-110 
+                hover:bg-dark-blue transition-all cursor-pointer;
+  }
+
+  .section-divider {
+    @apply bg-gray-200 my-20 h-1 w-16 rounded-full hidden sm:block;
   }
 
   /* Global styles END */
@@ -105,6 +123,10 @@
     @apply flex items-center justify-center w-full h-full px-4;
   }
 
+  .nav-list {
+    @apply flex w-full flex-wrap items-center justify-center gap-y-1 font-medium text-base-gray sm:w-[initial] sm:flex-nowrap sm:gap-5
+  }
+
   .header-nav__link {
     @apply flex h-full items-center justify-center px-2 text-sm hover:text-darkest-blue
            transition-colors duration-200 ease-in-out;
@@ -119,7 +141,7 @@
   /* Intro section styles */
 
   .intro-section {
-    @apply min-h-svh sm:min-h-screen flex justify-center flex-col max-w-[50rem] mt-0 sm:mt-8 2xl:mt-0;
+    @apply min-h-svh sm:min-h-screen flex justify-center flex-col max-w-[50rem] 2xl:max-w-[90rem] mt-4 sm:mt-8 2xl:mt-0;
   }
 
   .intro-text__heading {
