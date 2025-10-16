@@ -89,7 +89,7 @@
   }
 
   .btn-scroll-top {
-    @apply fixed bottom-6 right-6 z-max inline-block text-base-gray rounded-full p-3 bg-darkest-blue
+    @apply fixed bottom-6 right-6 z-max inline-block rounded-full p-3 bg-darkest-blue
                 shadow-md text-base-white outline-none border focus:scale-110 hover:scale-110 
                 hover:bg-dark-blue transition-all cursor-pointer;
   }
@@ -114,7 +114,7 @@
 
   .header-nav {
     @apply fixed top-0 left-1/2 h-header-height -translate-x-1/2 w-full rounded-none 
-                border-base-white border-opacity-40 bg-white/80 backdrop-blur-md
+                border border-gray-400/20 bg-white/80 backdrop-blur-md
                 shadow-subtle sm:top-6 sm:h-header-height-sm sm:w-header-width-sm 
                 sm:rounded-full;
   }
@@ -141,11 +141,15 @@
   /* Intro section styles */
 
   .section {
-    @apply min-h-svh sm:min-h-screen flex justify-center flex-col max-w-[50rem] 2xl:max-w-[90rem];
+    @apply min-h-dvh sm:min-h-screen flex justify-center items-center flex-col max-w-[50rem] 2xl:max-w-[90rem];
   }
 
   .section--intro {
     @apply mt-4 sm:mt-8 2xl:mt-0;
+  }
+
+  .section-header {
+    @apply text-3xl font-medium capitalize mb-8 text-center;
   }
 
   .intro-text__heading {
@@ -165,4 +169,10 @@
   }
 
   /* Intro section styles END */
+
+  /* About section styles */
+
+  .section--about {
+    @apply mb-28 max-w-[45rem] gap-y-3 text-center leading-8 mt-0;
+  }
 }

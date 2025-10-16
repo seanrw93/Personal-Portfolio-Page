@@ -1,5 +1,6 @@
 import { About } from "@/components/About";
 import { Intro } from "@/components/Intro";
+import { Projects } from "@/components/Projects";
 import { SectionDivider } from "@/components/SectionDivider";
 
 const Page = () => {
@@ -10,7 +11,8 @@ const Page = () => {
       <SectionDivider />
       <About />
       <SectionDivider />
-      {/* Other sections can be added here */}  
+      <Projects />
+      <SectionDivider />
     </main>
   );
 };

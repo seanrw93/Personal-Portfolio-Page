@@ -9,9 +9,10 @@ type CommonTranslations = {
   };
   hero: {
     welcome: string;
-    intro: TIntro;
+    intro: Intro;
     cta: string;
   },
+  about: Intro;
   btn: {
     contactMe: string;
     downloadCv: string;
@@ -22,6 +23,9 @@ type CommonTranslations = {
   },
   aria: {
     navigation: Navigation;
+  }, 
+  heading: {
+    about: string;
   }
 };
 

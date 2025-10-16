@@ -60,5 +60,11 @@ export default {
 
     },
   },
+  safelist: [
+    'font-semibold',
+    'underline',
+    'font-bold',
+    'italic'
+  ],
   plugins: [],
 } satisfies Config;
