@@ -173,6 +173,6 @@
   /* About section styles */
 
   .section--about {
-    @apply mb-28 max-w-[45rem] gap-y-3 text-center leading-8 mt-0;
+    @apply mb-28 max-w-[45rem] gap-y-3 text-center leading-8 pt-20 sm:py-20;
   }
 }
