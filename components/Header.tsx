@@ -45,8 +45,8 @@ export const Header = () => {
     <header className="header-container">
       <motion.div
         className="header-nav"
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 0.8 }}
+        initial={{ y: -100, x: "-50%" }}
+        animate={{ y: 0, x: "-50%" }}
         transition={{ type: "spring" }}
       >
         <nav
