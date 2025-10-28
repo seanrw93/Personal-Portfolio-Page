@@ -26,6 +26,7 @@ type CommonTranslations = {
   }, 
   heading: {
     about: string;
+    projects: string;
   }
 };
 

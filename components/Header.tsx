@@ -1,14 +1,15 @@
 "use client";
 
 import React from "react";
-import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/context/TranslationContext";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 export const Header = () => {
-  const { common } = useTranslation();
+  const { translations } = useTranslation();
+  const common = translations.common;
   const links = common?.nav ? Object.entries(common.nav) : [];
-  const aria = common?.aria.navigation;
+  const aria = common?.aria.navigation as { [key: string]: string };
 
   const navLinks = links.map(([key, label], index) => (
     <motion.li

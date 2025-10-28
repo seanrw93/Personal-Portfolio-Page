@@ -5,6 +5,9 @@ import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
+import { TranslationProvider } from "@/context/TranslationContext";
+import { getServerTranslation } from "@/lib/translationServer";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -20,14 +23,16 @@ export async function generateMetadata(): Promise<Metadata> {
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: Readonly<RootLayoutProps>) {
   const { locale } = await params;
+  const translations = getServerTranslation(locale);
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
@@ -35,10 +40,12 @@ export default async function RootLayout({
       >
         <div className="background-circle background-circle--pink"></div>
         <div className="background-circle background-circle--purple"></div>
-        <ScrollToTopButton />
-        <Header />
-        {children}
-        <Analytics />
+        <TranslationProvider initialLocale={locale} initialTranslations={translations}>
+          <ScrollToTopButton />
+          <Header />
+          {children}
+          <Analytics />
+        </TranslationProvider>
       </body>
     </html>
   );

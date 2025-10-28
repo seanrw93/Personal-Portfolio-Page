@@ -53,7 +53,8 @@
       }
     },
     "heading": {
-      "about": "À propos de moi"
+      "about": "À propos de moi",
+      "projects": "Mes Projets"
     }
   }
 }

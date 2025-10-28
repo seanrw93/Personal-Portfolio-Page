@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/context/TranslationContext";
 import Link from "next/link";
 import {
   BsArrowRight,
@@ -13,7 +13,8 @@ import {
 import { HiDownload } from "react-icons/hi";
 
 export const Intro = () => {
-  const { common } = useTranslation();
+  const { translations } = useTranslation();
+  const common = translations.common;
   const hero = common?.hero;
   const btn = common?.btn;
   const url = common?.url;

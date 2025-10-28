@@ -1,13 +1,13 @@
 "use client";
 
 import { SectionHeading } from "./SectionHeading";
-import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/context/TranslationContext";
 import { motion } from "framer-motion";
 
 export const About = () => {
-  const { common } = useTranslation();
-  const heading = common?.heading.about;
-  const paragraphs = common?.about ? Object.entries(common.about) : [];
+  const { translations } = useTranslation();
+  const heading = translations.common?.heading.about;
+  const paragraphs = translations.common?.about ? Object.entries(translations.common.about) : [];
   const contentSection = paragraphs.map(([key, value]) => (
     <p key={key} dangerouslySetInnerHTML={{ __html: value as string }} />
   ));
