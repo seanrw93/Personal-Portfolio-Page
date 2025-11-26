@@ -115,31 +115,30 @@
   }
 
   .header-nav {
-    @apply fixed top-1 right-0 h-header-height-xs w-header-width-xs rounded-none
-              border border-gray-400/20 bg-white/80 backdrop-blur-md
-              shadow-subtle sm:top-6 sm:left-1/2 sm:right-auto sm:h-header-height-sm sm:w-full sm:max-w-max sm:px-8
-              sm:-translate-x-1/2 sm:rounded-full transition-all duration-300 ease-in-out;
+    @apply fixed top-1 right-0 h-header-height-xs w-header-height-xs rounded-none
+            border border-gray-400/20 bg-white/80 backdrop-blur-md shadow-subtle
+            sm:top-6 sm:left-1/2 sm:right-auto sm:h-header-height-sm sm:w-full sm:max-w-max sm:px-8
+            sm:-translate-x-1/2 sm:rounded-full;
   }
 
   .header-nav__content {
-    @apply hidden items-center justify-center w-full h-full px-4 sm:flex
-              transition-all duration-300 ease-in-out;
+    @apply hidden items-center justify-center w-full h-full px-4 sm:flex;
   }
 
   .header-nav--open .header-nav {
     @apply top-0 left-1/2 h-auto -translate-x-1/2 w-full rounded-none 
-                border border-gray-400/20 bg-white/80 backdrop-blur-md
-                shadow-subtle;
+            border border-gray-400/20 bg-white/80 backdrop-blur-md shadow-subtle
+            transition-all duration-300 ease-in-out;
   }
 
   .header-nav--open .header-nav__content {
-    @apply flex;
+    @apply flex transition-opacity duration-300 ease-in-out;
   }
 
   /* Burger button styles */
   .header-nav__burger {
     @apply absolute top-1 right-1 w-6 h-6 flex flex-col justify-center 
-         items-center cursor-pointer bg-transparent border-0 z-10 sm:hidden;
+       items-center cursor-pointer bg-transparent border-0 z-10 sm:hidden;
   }
 
   .header-nav__burger span,
@@ -180,12 +179,13 @@
   }
 
   .nav-list {
-    @apply flex w-full flex-col items-start justify-center gap-y-1 font-medium text-base-gray py-2 sm:flex-row sm:items-center sm:w-[initial] sm:flex-nowrap sm:gap-5 sm:py-[initial];
+    @apply flex w-full flex-col items-start justify-center gap-y-1 font-medium text-base-gray py-2 
+         sm:flex-row sm:items-center sm:w-[initial] sm:flex-nowrap sm:gap-5 sm:py-0;
   }
 
   .header-nav__link {
     @apply flex h-full items-center justify-center px-2 text-sm hover:text-darkest-blue
-           transition-colors duration-200 ease-in-out;
+         transition-colors duration-200 ease-in-out sm:transition-none;
   }
 
   .header-nav__item {
