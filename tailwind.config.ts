@@ -13,8 +13,10 @@ export default {
         'circle-wider': 'var(--circle-size-wider)',
         'circle-sm': 'var(--circle-size-sm)',
         'header-height': 'var(--header-height)',
+        'header-height-xs': 'var(--header-height-xs)',
         'header-height-sm': 'var(--header-height-sm)',
         'header-width-sm': 'var(--header-width-sm)',
+        'header-width-xs': 'var(--header-width-xs)',
         'header-top-sm': 'var(--header-top-sm)',
       },
       inset: {

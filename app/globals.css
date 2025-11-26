@@ -43,7 +43,9 @@
   /* Header styles */
   --header-height: 4.5rem;
   --header-top-sm: 1.5rem;
+  --header-height-xs: 2.1rem;
   --header-height-sm: 3.25rem;
+  --header-width-xs: 2.1rem;
   --header-width-sm: 40rem;
 }
 
@@ -113,18 +115,72 @@
   }
 
   .header-nav {
-    @apply fixed top-0 left-1/2 h-header-height -translate-x-1/2 w-full rounded-none 
-                border border-gray-400/20 bg-white/80 backdrop-blur-md
-                shadow-subtle sm:top-6 sm:h-header-height-sm sm:w-header-width-sm 
-                sm:rounded-full;
+    @apply fixed top-1 right-0 h-header-height-xs w-header-width-xs rounded-none
+              border border-gray-400/20 bg-white/80 backdrop-blur-md
+              shadow-subtle sm:top-6 sm:left-1/2 sm:right-auto sm:h-header-height-sm sm:w-full sm:max-w-max sm:px-8
+              sm:-translate-x-1/2 sm:rounded-full transition-all duration-300 ease-in-out;
   }
 
   .header-nav__content {
-    @apply flex items-center justify-center w-full h-full px-4;
+    @apply hidden items-center justify-center w-full h-full px-4 sm:flex
+              transition-all duration-300 ease-in-out;
+  }
+
+  .header-nav--open .header-nav {
+    @apply top-0 left-1/2 h-auto -translate-x-1/2 w-full rounded-none 
+                border border-gray-400/20 bg-white/80 backdrop-blur-md
+                shadow-subtle;
+  }
+
+  .header-nav--open .header-nav__content {
+    @apply flex;
+  }
+
+  /* Burger button styles */
+  .header-nav__burger {
+    @apply absolute top-1 right-1 w-6 h-6 flex flex-col justify-center 
+         items-center cursor-pointer bg-transparent border-0 z-10 sm:hidden;
+  }
+
+  .header-nav__burger span,
+  .header-nav__burger span::before,
+  .header-nav__burger span::after {
+    @apply block w-4 h-0.5 bg-darkest-blue transition-all duration-300 ease-in-out;
+  }
+
+  .header-nav__burger span {
+    @apply relative;
+  }
+
+  .header-nav__burger span::before,
+  .header-nav__burger span::after {
+    content: "";
+    @apply absolute left-0;
+  }
+
+  .header-nav__burger span::before {
+    @apply -top-2;
+  }
+
+  .header-nav__burger span::after {
+    @apply top-2;
+  }
+
+  /* Burger animation when open */
+  .header-nav__burger span.open {
+    @apply bg-transparent;
+  }
+
+  .header-nav__burger span.open::before {
+    @apply rotate-45 top-0;
+  }
+
+  .header-nav__burger span.open::after {
+    @apply -rotate-45 top-0;
   }
 
   .nav-list {
-    @apply flex w-full flex-wrap items-center justify-center gap-y-1 font-medium text-base-gray sm:w-[initial] sm:flex-nowrap sm:gap-5;
+    @apply flex w-full flex-col items-start justify-center gap-y-1 font-medium text-base-gray py-2 sm:flex-row sm:items-center sm:w-[initial] sm:flex-nowrap sm:gap-5 sm:py-[initial];
   }
 
   .header-nav__link {
