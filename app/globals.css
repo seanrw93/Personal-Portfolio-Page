@@ -234,4 +234,42 @@
   .section--about {
     @apply mb-28 max-w-[45rem] gap-y-3 text-center leading-8 pt-20 sm:py-20;
   }
+
+  /* About section styles END */
+
+  /* Projects section styles */
+
+  .section--projects {
+    @apply max-w-[42rem] overflow-hidden my-8 sm:pr-8 sm:my-16;
+  }
+
+  .project-card {
+    @apply relative bg-gray-100 border border-black/5 py-4 px-5 
+            mb-3 sm:pl-10 sm:pr-2 sm:pt-10 overflow-hidden;
+  }
+
+  .project-card__content {
+    @apply sm:max-w-[50%] flex flex-col;
+  }
+
+  .project-card__title {
+    @apply text-xl font-semibold mb-2;
+  }
+
+  .project-card__description {
+    @apply mt-2 leading-relaxed text-dark-blue sm:overflow-hidden sm:text-ellipsis
+    sm:transition-all sm:duration-300 sm:ease-in-out;
+    text-overflow: ellipsis;
+  }
+
+  .project-card__tag {
+    @apply inline-block bg-black/70 text-lightest-blue uppercase
+        text-[0.7rem] font-medium px-3 py-1 rounded-full mt-2 mr-2 mb-2 tracking-wider;
+  }
+
+  .project-card__image {
+    @apply mt-2 sm:mt-[initial] sm:absolute sm:top-8 sm:-right-40  sm:w-[28.25rem] rounded-t-lg shadow-2xl;
+  }
+
+  /* Projects section styles END */
 }

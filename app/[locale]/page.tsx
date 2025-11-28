@@ -1,6 +1,6 @@
 import { About } from "@/components/About";
 import { Intro } from "@/components/Intro";
-import { Projects } from "@/components/Projects";
+import { Projects } from "@/components/Projects/Projects";
 import { SectionDivider } from "@/components/SectionDivider";
 
 const Page = () => {

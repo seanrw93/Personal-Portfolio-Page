@@ -13,7 +13,7 @@ export const projectsData = [
       github: "https://github.com/seanrw93/Personal-Portfolio-Page",
       live: "https://srw-dev.vercel.app/",
     },
-    imageUrl: "",
+    imageUrl: "/images/projects/portfolio.png",
   },
   {
     title: "HRnet",
@@ -26,7 +26,7 @@ export const projectsData = [
       github: "",
       live: "https://hrnet-srw.vercel.app/",
     },
-    imageUrl: "",
+    imageUrl: "/images/projects/hrnet.png",
   },
   {
     title: "React i18n Datepicker plugin",
@@ -39,7 +39,7 @@ export const projectsData = [
       github: "https://github.com/seanrw93/react-i18n-datepicker",
       live: "https://www.npmjs.com/package/react-i18n-datepicker",
     },
-    imageUrl: "",
+    imageUrl: "/images/projects/npm.png",
   },
   {
     title: "Argent Bank",
@@ -52,7 +52,7 @@ export const projectsData = [
       github: "https://github.com/seanrw93/remede-agence-OC-frontend",
       live: "https://argentbank-phi.vercel.app",
     },
-    imageUrl: "",
+    imageUrl: "/images/projects/argentbank.png",
   },
   {
     title: "SportSee",
@@ -61,11 +61,24 @@ export const projectsData = [
       fr: "Construit une application de suivi de fitness avec React et D3 pour afficher des statistiques personnalisées telles que les sessions, les calories et les performances. Connecté à une API backend que j'ai déployée, en utilisant un service Axios personnalisé et fetch natif pour des données en temps réel. Documenté les fonctions du service avec JSDoc pour une typage clair et une maintenabilité accrue. Suivi de près les maquettes Figma en mettant l'accent sur une expérience de bureau propre, des données standardisées et des interactions utilisateur fluides."
     },
     tags: ["React", "D3", "Fetch", "REST API", "JSDoc", "Figma"],
-    link: {
+    links: {
       github: "",
       live: ""
     },
-    imageUrl: "",
+    imageUrl: "/images/projects/sportsee.png",
+  },
+  {
+    title: "Billed SaaS App",
+    description: {
+      en: "Debugged and improved a SaaS expense management application. Fixed critical bugs in the employee dashboard, bill submission forms, and file upload functionality. Implemented comprehensive unit and integration tests using Jest to achieve high code coverage. Enhanced the login flow and improved error handling throughout the application.",
+      fr: "Débogué et amélioré une application SaaS de gestion des notes de frais. Corrigé des bugs critiques dans le tableau de bord employé, les formulaires de soumission de factures et la fonctionnalité de téléchargement de fichiers. Implémenté des tests unitaires et d'intégration complets avec Jest pour atteindre une couverture de code élevée. Amélioré le flux de connexion et la gestion d'erreur dans toute l'application."
+    },
+    tags: ["JavaScript", "Jest", "Debugging", "Unit Testing", "Integration Testing"],
+    links: {
+      github: "https://github.com/seanrw93/Billed-app-EN",
+      live: ""
+    },
+    imageUrl: "/images/projects/billed.png",
   },
   {
     title: "FishEye",
@@ -74,10 +87,36 @@ export const projectsData = [
       fr: "Un prototype de site accessible pour une plateforme mettant en avant des photographes indépendants. Développé la page d'accueil et les pages individuelles des photographes en utilisant HTML, CSS et JavaScript natif, basées sur des maquettes fournies. Les données ont été chargées dynamiquement à partir d'un fichier JSON, avec une logique d'affichage structurée autour du pattern Factory Method. L'accessibilité était un point central, avec une navigation complète au clavier et un support pour les lecteurs d'écran."
     },
     tags: ["HTML/CSS", "JavaScript", "Accessibility (RGAA/WCAG)", "Figma"],
-    link: {
+    links: {
       github: "https://github.com/seanrw93/Front-End-Fisheye-EN",
       live: "https://seanrw93.github.io/Front-End-Fisheye-EN/index.html"
     },
-    imageUrl: "",
+    imageUrl: "/images/projects/fisheye.png",
+  },
+  {
+    title: "Oh My Food!",
+    description: {
+      en: "Static recipe discovery website built with pure HTML and Sass. Features advanced CSS transitions and animations for a user-friendly experience. Implemented responsive design with modern CSS techniques and carefully crafted micro-interactions for enhanced usability.",
+      fr: "Site statique de découverte de recettes construit avec HTML pur et Sass. Présente des transitions CSS avancées et des animations pour une expérience utilisateur conviviale. Mise en œuvre d'un design responsive avec des techniques CSS modernes et des micro-interactions soigneusement élaborées pour une utilisabilité améliorée."
+    },
+    tags: ["HTML", "Sass", "CSS Animations", "Responsive Design"],
+    links: {
+      github: "https://github.com/seanrw93/OhMyFood-OC",
+      live: "https://seanrw93.github.io/OhMyFood-OC/"
+    },
+    imageUrl: "/images/projects/ohmyfood.png",
+  },
+  {
+    title: "Canvas Square Swarm",
+    description: {
+      en: "Interactive canvas animation featuring a swarm of colorful squares that respond to user interactions. Built with pure HTML, CSS, and JavaScript using the Canvas API. Demonstrates particle physics, collision detection, and smooth animations with optimized performance for real-time rendering.",
+      fr: "Animation interactive sur canvas mettant en vedette un essaim de carrés colorés qui répondent aux interactions utilisateur. Construit avec HTML pur, CSS et JavaScript en utilisant l'API Canvas. Démontre la physique des particules, la détection de collision et des animations fluides avec des performances optimisées pour le rendu en temps réel."
+    },
+    tags: ["HTML", "CSS", "JavaScript", "Canvas API", "Animation"],
+    links: {
+      github: "https://github.com/seanrw93/Canvas-Square-Swarm",
+      live: "https://seanrw93.github.io/Canvas-Square-Swarm/"
+    },
+    imageUrl: "/images/projects/canvas.png",
   },
 ] as const;
