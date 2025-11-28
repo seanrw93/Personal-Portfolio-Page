@@ -8,7 +8,10 @@ import { projectsData } from "@/lib/data"
 
 export const Projects = () => {
 
-  const { locale } = useTranslation();
+  const { translations, locale } = useTranslation();
+
+  const common = translations.common;
+  const heading = common?.heading;
 
   const projects = projectsData.map((project, index) => (
     <ProjectCard
@@ -23,8 +26,11 @@ export const Projects = () => {
   ));
   
   return (
-    <section id="projects" className="section section--projects">
-      <SectionHeading>My Projects</SectionHeading>
+    <section 
+      id="projects" 
+      className="section section--projects" 
+    >
+      <SectionHeading>{heading?.projects}</SectionHeading>
       <div className="projects-container">
         {projects}
       </div>

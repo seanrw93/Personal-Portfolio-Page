@@ -34,28 +34,6 @@
 
       "p6": "<span class=\"font-semibold\">Teaching</span> taught me how to communicate complex ideas simply; <span class=\"font-semibold\">coding</span> lets me build those ideas into something tangible."
     },
-    "projects": {
-      "portfolio": {
-        "title": "Personal Portfolio",
-        "description":
-          "Personal site built with Next.js and TailWind CSS to showcase my profile, projects, and background. Fully responsive design with SEO and performance optimizations. Includes a working contact form with automatic notifications via the API, and smooth user interactions powered by Framer Motion."
-      },
-      "hrnet": {
-        "title": "HRNet Clone",
-        "description":
-          "Rebuilt the internal HRnet app by switching from jQuery to React for better performance and easier maintenance. Converted a key jQuery plugin into a clean, modular React component with modern state handling. Used React Bootstrap for styling, Redux Toolkit for global state and ran Lighthouse tests to compare performance before and after."
-      },
-      "plugin": {
-        "title": "React i18n Datepicker",
-        "description":
-          "A fully customisable and modular React datepicker controlled component with internationalisation (i18n) support. Built with accessibility in mind, it supports keyboard navigation and screen readers. Features include single/multiple date selection, range selection, and various date formats."
-      },
-      "argentBank": {
-        "title": "Argent Bank",
-        "description":
-          "Built a banking web app with React and Redux Toolkit where users can log in, manage their profile, and view personal data. Set up the backend API for secure data exchange using HTTP and JWT. Designed a responsive UI based on provided mockups, with careful attention to state management and access control. Also helped define specs for a future transactions API."
-      }
-    },
     "btn": {
       "contactMe": "Contact me here",
       "downloadCv": "Download CV"
