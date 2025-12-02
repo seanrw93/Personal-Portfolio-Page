@@ -25,6 +25,8 @@ export const ProjectCard = ({
   index,
 }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
+
   const cardRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
 
@@ -57,7 +59,11 @@ export const ProjectCard = ({
       className="project-card"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onFocus={() => setIsFocused(true)}
+      onBlur={() => setIsFocused(false)}
       ref={cardRef}
+      role="article"
+      tabIndex={0}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
     >
       <div className="project-card__content">
@@ -65,13 +71,21 @@ export const ProjectCard = ({
         <p
           className={
             "project-card__description" +
-            (isHovered
+            (isFocused
               ? " sm:max-h-[50rem]"
-              : " sm:max-h-[6.25rem] line-clamp-4")
+              : " sm:max-h-[6.25rem] line-clamp-3")
           }
+          aria-expanded={isFocused ? "true" : "false"}
         >
           {description}
         </p>
+        <span 
+          className="see-more"
+          aria-hidden={isFocused ? "true" : "false"}
+          style={isFocused ? { display: "none" } : { display: "inline-block" }}
+          >
+            See more
+        </span>
         <ul className="project-card__tags">
           {tags.map((tag, tagIndex) => (
             <li key={tagIndex} className="project-card__tag">

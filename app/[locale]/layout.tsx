@@ -34,7 +34,7 @@ export default async function RootLayout({
   const translations = getServerTranslation(locale);
 
   return (
-    <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
+    <html lang={locale} className="!scroll-smooth" suppressHydrationWarning>
       <body
         className={`${inter.className} bg-primary-bg text-primary-text relative antialiased`}
       >

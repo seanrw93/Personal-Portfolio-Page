@@ -22,7 +22,7 @@
       "cta": "Explore my work"
     },
     "about": {
-      "p1": "Based in Paris, I'm a <span class=\"font-semibold\">trilingual developer</span> (French, English, German) who began my career as a <span class=\"font-semibold\">language teacher</span> in academic and professional settings. My adventure into web development began in <span class=\"font-semibold\">2022</span>, where I started with the basics of <span class=\"font-semibold\">responsive design</span> and <span class=\"font-semibold\">DOM manipulation</span>, and quickly became <span class=\"underline\">hooked.</span> I loved seeing the fruits of my labour come to life on screen, and the <span class=\"font-semibold\">problem-solving aspect</span> quickly became my favorite part of programming. I <span class=\"underline\">love</span> the feeling of finally figuring out a solution to a tricky issue.",
+      "p1": "Based in Paris, I'm a <span class=\"font-semibold\">trilingual developer</span> (French, English, German) who began my career as a <span class=\"font-semibold\">language teacher</span> in academic and professional settings. My adventure into web development began in <span class=\"font-semibold\">2022</span>, where I started with the basics of <span class=\"font-semibold\">responsive design</span> and <span class=\"font-semibold\">DOM manipulation</span>, and quickly became <span class=\"underline\">hooked.</span> I loved seeing the fruits of my labour come to life on screen, and the <span class=\"font-semibold\">problem-solving aspect</span> quickly became my favorite part of programming.",
 
       "p2": "That passion led me to <span class=\"font-semibold\">change career paths entirely</span>. In <span class=\"font-semibold\">2023</span>, I began a <span class=\"font-semibold\">two-year work-study diploma</span> with OpenClassrooms, focusing on <span class=\"font-semibold\">JavaScript and React</span>. At the same time, I had the opportunity to apply my skills in a professional setting at <span class=\"font-semibold\">Abeille Assurances</span>, where I worked as a <span class=\"font-semibold\">hybrid front-end developer and web integrator</span>.",
 
@@ -32,7 +32,7 @@
 
       "p5": "I'm always eager to explore <span class=\"font-semibold\">new technologies</span> and am currently seeking a <span class=\"font-semibold\">full-time position in web development</span>.",
 
-      "p6": "<span class=\"font-semibold\">Teaching</span> taught me how to communicate complex ideas simply; <span class=\"font-semibold\">coding</span> lets me build those ideas into something tangible."
+      "p6": "<span class=\"font-semibold\">Teaching</span> taught me to explain complex ideas clearly, and <span class=\"font-semibold\">coding</span> allows me to transform those ideas into tangible solutions."
     },
     "btn": {
       "contactMe": "Contact me here",

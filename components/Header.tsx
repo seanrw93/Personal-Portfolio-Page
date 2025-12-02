@@ -14,8 +14,19 @@ export const Header = () => {
   const links = common?.nav ? Object.entries(common.nav) : [];
   const aria = common?.aria.navigation as { [key: string]: string };
 
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+
   const [navOpen, setNavOpen] = useState(false);
   const toggleMenu = () => setNavOpen(prev => !prev);
+
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      setActiveSection(hash);
+    } else {
+      setActiveSection("home");
+    }
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -47,11 +58,15 @@ export const Header = () => {
         },
       }}
       tabIndex={-1}
-      role="none"
     >
       <Link
         href={`#${key}`}
-        className="header-nav__link"
+        className={"header-nav__link" + (activeSection === key ? " header-nav__link--active" : "")}
+        aria-current={activeSection === key ? "page" : undefined}
+        onClick={() => {
+          setActiveSection(key);
+          setNavOpen(false);
+        }}
         aria-label={aria.link.replace("{{section}}", label.toLowerCase())}
       >
         {label}
