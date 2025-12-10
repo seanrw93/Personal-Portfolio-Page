@@ -6,9 +6,10 @@ import { useTranslation } from "@/context/TranslationContext";
 
 type TranslationButtonProps = {
   className?: string;
+  ariaLabel?: string;
 };
 
-export const TranslationButton = ({ className }: TranslationButtonProps) => {
+export const TranslationButton = ({ className, ariaLabel }: TranslationButtonProps) => {
   const pathname = usePathname();
   const { locale } = useTranslation();
 
@@ -30,7 +31,7 @@ export const TranslationButton = ({ className }: TranslationButtonProps) => {
   };
 
   return (
-    <div className="flex place-items-center text-blue-400 gap-2">
+    <div className="flex place-items-center text-blue-400 gap-2" aria-label={ariaLabel}>
       <Link
         href={enHref}
         scroll={false}

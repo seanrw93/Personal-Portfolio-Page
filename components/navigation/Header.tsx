@@ -6,7 +6,7 @@ import { useTranslation } from "@/context/TranslationContext";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-import { TranslationButton } from "../buttons/TranslationButton";
+import { TranslationButton } from "@/components/buttons/TranslationButton";
 
 export const Header = () => {
   const { translations } = useTranslation();
