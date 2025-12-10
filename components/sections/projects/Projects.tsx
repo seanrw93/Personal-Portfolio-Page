@@ -1,17 +1,14 @@
 "use client";
 
 import { useTranslation } from "@/context/TranslationContext"
-import { SectionHeading } from "@/components/SectionHeading"
-import { ProjectCard } from "./ProjectCard"
+import { SectionHeading } from "@/components/ui/SectionHeading"
+import { ProjectCard } from "."
 import { projectsData } from "@/lib/data"
 
 
 export const Projects = () => {
-
-  const { translations, locale } = useTranslation();
-
-  const common = translations.common;
-  const heading = common?.heading;
+  
+  const { locale } = useTranslation();
 
   const projects = projectsData.map((project, index) => (
     <ProjectCard
@@ -30,7 +27,7 @@ export const Projects = () => {
       id="projects" 
       className="section section--projects" 
     >
-      <SectionHeading>{heading?.projects}</SectionHeading>
+      <SectionHeading titleSection="projects" />
       <div className="projects-container">
         {projects}
       </div>

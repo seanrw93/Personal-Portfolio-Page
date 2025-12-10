@@ -14,7 +14,7 @@
         "name": "I'm Sean",
         "greeting": "Welcome to my personal portfolio website.",
         "rolePrefix": "I'm a",
-        "role": "Frontend Developer",
+        "role": "Frontend Developer | Freelancer",
         "specialisedIn": "specialised in",
         "description": "accessible, responsive, and modular web interfaces.",
         "focus": "My focus is"
@@ -33,6 +33,22 @@
       "p5": "I'm always eager to explore <span class=\"font-semibold\">new technologies</span> and am currently seeking a <span class=\"font-semibold\">full-time position in web development</span>.",
 
       "p6": "<span class=\"font-semibold\">Teaching</span> taught me to explain complex ideas clearly, and <span class=\"font-semibold\">coding</span> allows me to transform those ideas into tangible solutions."
+    },
+    "contact" : {
+      "title": "Get in Touch",
+      "description": "I'm currently open to new opportunities and collaborations. Whether you have a project in mind, want to discuss potential roles, or just want to say hello, feel free to reach out!",
+      "email": "You can contact me via the form below",
+      "linkedin": "or connect with me on LinkedIn ",
+      "lookingForward": "I look forward to hearing from you!",
+      "form": {
+        "email": "Your Email",
+        "message": "Your Message",
+        "subject": "Subject",
+        "submit": "Send",
+        "sending": "Sending...",
+        "success": "Thank you! Your message has been sent successfully.",
+        "error": "Oops! Something went wrong. Please try again later."
+      }
     },
     "btn": {
       "contactMe": "Contact me here",
@@ -53,7 +69,8 @@
     },
     "heading": {
       "about": "About Me",
-      "projects": "My Projects"
+      "projects": "My Projects",
+      "contact": "Get in touch"
     }
   }
 }

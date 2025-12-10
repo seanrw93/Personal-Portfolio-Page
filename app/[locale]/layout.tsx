@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Header } from "@/components/Header"
-import { ScrollToTopButton } from "@/components/ScrollToTopButton";
+import { Header } from "@/components/navigation/Header"
+import { ScrollToTopButton } from "@/components/buttons/ScrollToTopButton";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import { Analytics } from "@vercel/analytics/next";

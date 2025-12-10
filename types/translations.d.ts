@@ -27,7 +27,9 @@ type CommonTranslations = {
   heading: {
     about: string;
     projects: string;
+    contact: string;
   }
+  contact: Contact;
 };
 
 type Intro = {
@@ -40,6 +42,24 @@ type Navigation = {
   github: string;
   linkedin: string;
   scrollToTop: string;
+}
+
+type Contact = {
+  title: string;
+  description: string;
+  email: string;
+  linkedin: string;
+  lookingForward: string;
+  form: ContactForm;
+}
+
+type ContactForm = {
+  email: string;
+  message: string;
+  sending: string;
+  submit: string;
+  success: string;
+  error: string;
 }
 
 export type Translations = {

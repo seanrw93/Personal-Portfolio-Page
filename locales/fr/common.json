@@ -14,7 +14,7 @@
         "name": "je suis Sean",
         "greeting": "Bienvenue sur mon site portfolio personnel.",
         "rolePrefix": "Je suis un",
-        "role": "Développeur Front-end",
+        "role": "Développeur Front-end | Freelance",
         "specialisedIn": "spécialisé dans les",
         "description": "interfaces web accessibles, responsives et modulaires.",
         "focus": "Mon focus est"
@@ -29,6 +29,21 @@
       "p4": "Au-delà de la création de <span class=\"font-semibold\">composants UI évolutifs et réutilisables</span>, je suis à l'aise pour penser en termes d'<span class=\"font-semibold\">architecture front-end</span> — concevant des <span class=\"font-semibold\">systèmes modulaires</span>, gérant l'<span class=\"font-semibold\">état de manière prévisible</span> et garantissant la <span class=\"font-semibold\">maintenabilité au sein des équipes</span>. Je fais attention à l'<span class=\"font-semibold\">accessibilité</span>, à la <span class=\"font-semibold\">performance</span> et au <span class=\"font-semibold\">design responsive</span>, et j'apprécie de structurer des bases de code qui sont propres, intuitives et faciles à intégrer.",
       "p5": "Je suis toujours désireux d'explorer de <span class=\"font-semibold\">nouvelles technologies</span> et je recherche actuellement un <span class=\"font-semibold\">poste à temps plein en développement web</span>.",
       "p6": "<span class=\"font-semibold\">L'enseignement</span> m'a appris à expliquer clairement des idées complexes, et <span class=\"font-semibold\">le codage</span> me permet de transformer ces idées en solutions tangibles."
+    },
+    "contact" : {
+      "description": "Je suis actuellement ouvert à de nouvelles opportunités et collaborations. Que vous ayez un projet en tête, que vous souhaitiez discuter de rôles potentiels ou simplement dire bonjour, n'hésitez pas à me contacter !",
+      "email": "Vous pouvez me contacter via le formulaire ci-dessous",
+      "linkedin": "ou connectez-vous avec moi sur LinkedIn ",
+      "lookingForward": "J'ai hâte d'avoir de vos nouvelles !",
+      "form": {
+        "email": "Votre Email",
+        "message": "Votre Message",
+        "subject": "Votre Sujet",
+        "submit": "Envoyer",
+        "sending": "Envoi en cours...",
+        "success": "Merci ! Votre message a été envoyé avec succès.",
+        "error": "Oups ! Quelque chose a mal tourné. Veuillez réessayer plus tard."
+      }
     },
     "btn": {
       "contactMe": "Contactez-moi ici",
@@ -49,7 +64,8 @@
     },
     "heading": {
       "about": "À propos de moi",
-      "projects": "Mes Projets"
+      "projects": "Mes Projets",
+      "contact": "Contactez-moi"
     }
   }
 }
