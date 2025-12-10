@@ -9,7 +9,7 @@ type TranslationButtonProps = {
   ariaLabel?: string;
 };
 
-export const TranslationButton = ({ className, ariaLabel }: TranslationButtonProps) => {
+export const TranslationButton = ({ className = "", ariaLabel= ""}: TranslationButtonProps) => {
   const pathname = usePathname();
   const { locale } = useTranslation();
 
