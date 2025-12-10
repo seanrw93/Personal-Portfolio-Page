@@ -31,6 +31,7 @@
       "p6": "<span class=\"font-semibold\">L'enseignement</span> m'a appris à expliquer clairement des idées complexes, et <span class=\"font-semibold\">le codage</span> me permet de transformer ces idées en solutions tangibles."
     },
     "contact" : {
+      "title": "Contactez-moi",
       "description": "Je suis actuellement ouvert à de nouvelles opportunités et collaborations. Que vous ayez un projet en tête, que vous souhaitiez discuter de rôles potentiels ou simplement dire bonjour, n'hésitez pas à me contacter !",
       "email": "Vous pouvez me contacter via le formulaire ci-dessous",
       "linkedin": "ou connectez-vous avec moi sur LinkedIn ",
