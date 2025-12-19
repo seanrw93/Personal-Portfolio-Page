@@ -17,7 +17,7 @@ export const submitMessage = async (_prev: Result | null, formData: FormData): P
     await resend.emails.send({
         from: 'onboarding@resend.dev',
         to: 's.roennau_wergen@proton.me',
-        subject: 'New Contact Form Message',
+        subject: `New Portfolio Message: ${subject}`,
         text: `Sender: ${email}\nSubject: ${subject}\nMessage: ${message}`,
     });
 

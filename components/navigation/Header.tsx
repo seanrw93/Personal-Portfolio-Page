@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
 import { useState, useEffect } from "react";
 import { useTranslation } from "@/context/TranslationContext";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
 
 import { TranslationButton } from "@/components/buttons/TranslationButton";
@@ -19,14 +18,17 @@ export const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   const toggleMenu = () => setNavOpen(prev => !prev);
 
-  useEffect(() => {
-    const hash = window.location.hash.substring(1);
-    if (hash) {
-      setActiveSection(hash);
-    } else {
-      setActiveSection("home");
-    }
-  }, []);
+useEffect(() => {
+  const applyHash = () => {
+    const id = window.location.hash.substring(1);
+    setActiveSection(id);
+  };
+
+  applyHash();
+
+  window.addEventListener("hashchange", applyHash);
+  return () => window.removeEventListener("hashchange", applyHash);
+}, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,6 +40,7 @@ export const Header = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [navOpen]);
+  
 
   const navLinks = links.map(([key, label], index) => (
     <motion.li
@@ -63,8 +66,7 @@ export const Header = () => {
         href={`#${key}`}
         className={"header-nav__link" + (activeSection === key ? " header-nav__link--active" : "")}
         aria-current={activeSection === key ? "page" : undefined}
-        onClick={() => {
-          setActiveSection(key);
+        onClick={() => {;
           setNavOpen(false);
         }}
         aria-label={aria.link.replace("{{section}}", label.toLowerCase())}

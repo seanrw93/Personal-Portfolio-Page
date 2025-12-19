@@ -1,7 +1,10 @@
 "use client";
 
+import { useState } from "react";
+import { useSectionInView } from "@/hooks/useSectionInView";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { ReactTyped } from "react-typed";
 import { useTranslation } from "@/context/TranslationContext";
 import Link from "next/link";
 import {
@@ -13,15 +16,17 @@ import {
 import { HiDownload } from "react-icons/hi";
 
 export const Intro = () => {
-  const { translations } = useTranslation();
-  const common = translations.common;
-  const hero = common?.hero;
-  const btn = common?.btn;
-  const url = common?.url;
-  const aria = common?.aria;
+  const { ref } = useSectionInView("home");
 
+  const { translations } = useTranslation();
+  const  {btn, url, aria } = translations?.common;
+  const { name, role, freelance, specialisedIn, description, focus } = translations?.common?.hero?.intro;
+  const { welcome, cta  } = translations?.common?.hero;
+
+  const [firstRun, setFirstRun] = useState(true);
+  
   return (
-    <section id="intro" className="section section--intro">
+    <section id="home" className="section section--intro" ref={ref}>
       <div className="image-container flex flex-col items-center text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -45,7 +50,7 @@ export const Intro = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.3 }}
           >
-            {hero.welcome}
+            {welcome}
           </motion.h1>
           <motion.p
             className="intro-text__description"
@@ -53,12 +58,23 @@ export const Intro = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
           >
-            Hello, {hero.intro.name},{" "}
-            <span className="font-bold">{hero.intro.role}</span>,{" "}
-            {hero.intro.specialisedIn}{" "}
-            <span className="font-bold italic">{hero.intro.description}</span>
+            Hello, {name},{" "}
+            <span className="font-bold">
+              <ReactTyped
+                strings={[role, freelance].flat()}
+                typeSpeed={60}
+                backSpeed={50}
+                startDelay={firstRun ? 1000 : 100}
+                backDelay={800}
+                smartBackspace
+                loop
+                onBegin={() => firstRun && setFirstRun(false)}
+              />
+            </span>,{" "}
+            {specialisedIn}{" "}
+            <span className="font-bold italic">{description}</span>
             <br />
-            {hero.intro.focus}{" "}
+            {focus}{" "}
             <span className="underline">React (Next.js)</span>.
           </motion.p>
         </div>
@@ -112,7 +128,7 @@ export const Intro = () => {
             className="btn-tertiary flex flex-col sm:flex-row items-center justify-center space-x-2"
             aria-label={aria.navigation.link.replace("{{section}}", "about")}
           >
-            <span className="mb-4 sm:mb-0">{hero.cta}</span>
+            <span className="mb-4 sm:mb-0">{cta}</span>
             <BsArrowDown className="text-4xl sm:text-2xl animate-bounce group-hover:stroke-1 transition" />
           </Link>
         </motion.div>

@@ -27,6 +27,7 @@ type CommonTranslations = {
   heading: {
     about: string;
     projects: string;
+    skills: string;
     contact: string;
   }
   contact: Contact;

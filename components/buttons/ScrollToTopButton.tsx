@@ -1,13 +1,13 @@
 "use client";
 
 import { useScroll } from "@/hooks/useScroll";
-import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from '@/context/TranslationContext'
 import { BsArrowUp } from "react-icons/bs";
 
 export const ScrollToTopButton = () => {
   const isVisible = useScroll(300);
-  const { common } = useTranslation();
-  const aria = common?.aria.navigation;
+  const { translations } = useTranslation();
+  const aria = translations.common?.aria.navigation;
 
   return (
     <button

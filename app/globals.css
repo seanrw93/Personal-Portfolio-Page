@@ -8,6 +8,7 @@
   --darkest-blue: #1a202c;
   --dark-blue: #2d3748;
   --base-gray: #4b5563;
+  --light-gray: #f3f4f6;
   --dark-gray: #1a202c;
   --lightest-blue: #f9fafb;
   --base-white: #fff;
@@ -119,7 +120,7 @@
             border border-gray-400/20 bg-white/80 backdrop-blur-md
             shadow-subtle transition-all duration-300 ease-in-out
             sm:top-6 sm:left-1/2 sm:right-auto sm:h-header-height-sm sm:w-full sm:max-w-max sm:px-8
-            sm:-translate-x-1/2 sm:rounded-full sm:transition-none;
+            sm:-translate-x-1/2 sm:rounded-full sm:transition-none sm:overflow-hidden;
   }
 
   .header-nav__content {
@@ -238,7 +239,7 @@
   /* About section styles */
 
   .section--about {
-    @apply mb-28 max-w-[45rem] gap-y-3 text-center leading-8 pt-20 sm:py-20;
+    @apply mb-28 max-w-[45rem] gap-y-3 text-center leading-8 pt-20 sm:py-20 sm:scroll-m-40;
   }
 
   /* About section styles END */
@@ -246,7 +247,7 @@
   /* Projects section styles */
 
   .section--projects {
-    @apply max-w-[42rem] gap-y-3 overflow-hidden my-8 pt-20 sm:py-20;
+    @apply max-w-[42rem] gap-y-3 overflow-hidden my-8 pt-20 sm:py-20 sm:scroll-m-40;
   }
 
   .project-card {
@@ -291,6 +292,24 @@
   }
 
   /* Projects section styles END */
+
+  /* Skills section styles */
+
+  .section--skills {
+    @apply gap-y-6 text-center pt-20 sm:py-20 w-[min(100%,60rem)] 
+          sm:scroll-m-40;
+  }
+
+  .tags-container {
+    @apply mt-8 flex flex-wrap justify-center gap-3 text-lg text-darkest-blue;
+  }
+
+  .tags-container__tag {
+    @apply bg-base-white border-black/[0.1] border px-4 py-2 rounded-xl 
+          shadow-sm font-medium;
+  }
+
+  /* Skills section styles END */
 
   /* Contact section styles */
 

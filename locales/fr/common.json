@@ -14,7 +14,8 @@
         "name": "je suis Sean",
         "greeting": "Bienvenue sur mon site portfolio personnel.",
         "rolePrefix": "Je suis un",
-        "role": "Développeur Front-end | Freelance",
+        "role": "Développeur Front-end",
+        "freelance": "Freelance",
         "specialisedIn": "spécialisé dans les",
         "description": "interfaces web accessibles, responsives et modulaires.",
         "focus": "Mon focus est"
@@ -65,7 +66,8 @@
     },
     "heading": {
       "about": "À propos de moi",
-      "projects": "Mes Projets",
+      "projects": "Mes projets",
+      "skills": "Mes compétences",
       "contact": "Contactez-moi"
     }
   }

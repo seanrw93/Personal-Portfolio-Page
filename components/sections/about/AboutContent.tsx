@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import { useTranslation } from "@/context/TranslationContext";
 
 export const AboutContent = () => {

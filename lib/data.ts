@@ -1,6 +1,3 @@
-import React from "react";
-import { BsGit, BsGithub } from "react-icons/bs";
-
 export const projectsData = [
   {
     title: "Portfolio Website",
@@ -8,7 +5,7 @@ export const projectsData = [
       en: "Personal site built with Next.js to showcase my profile, projects, and background. Fully responsive design with SEO and performance optimizations. Includes a working contact form with automatic notifications via the API.",
       fr: "Site personnel construit avec Next.js pour présenter mon profil, mes projets et mon parcours. Design entièrement responsive avec optimisations SEO et performances. Comprend un formulaire de contact fonctionnel avec notifications automatiques via l'API."
     },
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Prisma", "EmailJS"],
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Resend", "Vercel"],
     links: {
       github: "https://github.com/seanrw93/Personal-Portfolio-Page",
       live: "https://srw-dev.vercel.app/",
@@ -47,7 +44,7 @@ export const projectsData = [
       en: "A banking web app with React + Vite and Redux Toolkit where users can log in, manage their profile, and view personal data. Set up the backend API for secure data exchange using HTTP and JWT. Designed a responsive UI based on provided mockups, with careful attention to state management and access control. Also helped define specs for a future transactions API.",
       fr: "Construit une application bancaire web avec React + Vite et Redux Toolkit où les utilisateurs peuvent se connecter, gérer leur profil et consulter leurs données personnelles. Mis en place l'API backend pour un échange de données sécurisé utilisant HTTP et JWT. Conçu une interface utilisateur responsive basée sur des maquettes fournies, avec une attention particulière à la gestion de l'état et au contrôle d'accès. A également aidé à définir les spécifications pour une future API de transactions."
     },
-    tags: ["React", "Vite", "React Router", "Redux Toolkit", "Redux Toolkit", "Sass", "Axios", "REST API", "Node.js", "Express", "MongoDB", "JWT"],
+    tags: ["React", "Vite", "React Router", "Redux Toolkit", "Sass", "Axios", "REST API", "Node.js", "Express", "MongoDB", "JWT"],
     links: {
       github: "https://github.com/seanrw93/remede-agence-OC-frontend",
       live: "https://argentbank-phi.vercel.app",
@@ -119,4 +116,8 @@ export const projectsData = [
     },
     imageUrl: "/images/projects/canvas.png",
   },
+] as const;
+
+export const skillsData = [
+  "HTML5", "CSS3", "Sass", "Bootstrap", "JavaScript (ES6+)", "TypeScript", "React", "Next.js", "Vite", "Redux", "Angular", "Node.js", "Express", "MongoDB", "REST APIs", "Jest", "Vitest", "React Testing Library", "Git", "GitHub", "Figma", "Framer Motion", "Responsive Design", "Accessibility (WCAG/RGAA)"
 ] as const;
