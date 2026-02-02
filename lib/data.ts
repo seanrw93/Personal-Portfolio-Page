@@ -1,3 +1,5 @@
+import React from "react";
+
 export const projectsData = [
   {
     title: "Portfolio Website",
@@ -121,3 +123,90 @@ export const projectsData = [
 export const skillsData = [
   "HTML5", "CSS3", "Sass", "Bootstrap", "JavaScript (ES6+)", "TypeScript", "React", "Next.js", "Vite", "Redux", "Angular", "Node.js", "Express", "MongoDB", "REST APIs", "Jest", "Vitest", "React Testing Library", "Git", "GitHub", "Figma", "Framer Motion", "Responsive Design", "Accessibility (WCAG/RGAA)"
 ] as const;
+
+export const experiencesData = [
+  {
+    title: {
+      en: "Frontend Developer specialising in UI integration",
+      fr: "Développeur Frontend / Intégrateur Web"
+    },
+    company: "Abeille Assurances",
+    location: "Bois-Colombes, France",
+    period: "2023 - 2025",
+    description: {
+      en: "Worked in the Digital Experience team to enhance the user experience across the Abeille Assurances web platforms",
+      fr: "Travaillé au sein de l'équipe Digital Experience pour améliorer l'expérience utilisateur sur les plateformes web d'Abeille Assurances"
+    },
+    responsibilities: {
+      en: [
+        "Developed responsive interfaces, ensuring performance and cross-platform consistency.",
+        "Evolved the internal Design System by creating reusable components following Atomic Design principles and BEM methodology, alongside a layout overhaul to ensure a cohesive user experience.",
+        "Collaborated with UX/UI teams and stakeholders to translate mockups into scalable, maintainable code.",
+        "Managed CI/CD pipelines with Jenkins to ensure smooth, reliable deployments across environments.",
+        "Optimized user journeys through A/B testing designed in partnership with UX teams.",
+        "Actively participated in Agile/Scrum rituals with a focus on continuous improvement and software quality."
+      ],
+      fr: [
+        "Développer des interfaces réactives, en assurant performance et cohérence multi-plateforme.",
+        "Faire évoluer le Design System interne par la création de composants réutilisables selon les principes d’Atomic Design et la méthodologie BEM, accompagnée d’une refonte de la mise en page pour garantir une expérience utilisateur homogène et cohérente.",
+        "Collaborer avec les équipes UX/UI et les parties prenantes afin de traduire les maquettes en code évolutif et maintenable.",
+        "Gérer les pipelines CI/CD avec Jenkins pour assurer des déploiements fluides et fiables sur différents environnements.",
+        "Optimiser les parcours à l'aide d'A/B-tests conçus en partenariat avec les équipes UX.",
+        "Participer activement aux rituels Agile/Scrum dans une logique d’amélioration continue et de qualité logicielle."
+      ]
+    },
+    tech: [],
+    icon: React.createElement("img", { src: "/images/logos/abeille-logo.png", alt: "Abeille Assurances Logo", style: { width: '100%', height: '100%', borderRadius: '50%' } })
+  },
+  {
+    title: {
+      en: "Degree in JavaScript React Application Development",
+      fr: "Formation diplômante en développement d'application JavaScript React",
+    },
+    company: "OpenClassrooms",
+    location: "France",
+    period: "2025",
+    description: {
+      en: "Professional course focused on mastering front-end technologies (HTML, CSS, React, Redux, Webpack, etc.), with the completion of 14 real-world projects. These projects cover web integration, dynamic interface development, state management, performance optimization, testing, accessibility, and application deployment.",
+      fr: "Parcours professionnalisant axé sur la maîtrise des technologies front-end (HTML, CSS, React, Redux, Webpack, etc.), avec la réalisation de 14 projets concrets en conditions réelles. Ces projets couvrent l'intégration web, le development d'interfaces dynamiques, la gestion d'état, l'optimisation des performances, les tests, l'accessibilité, et le déploiement d'applications"
+    },
+    responsibilities: {
+      en: [],
+      fr: []
+    },
+    tech: [],
+    icon: React.createElement("img", { src: "/images/logos/oc-logo.png", alt: "OpenClassrooms Logo", style: { width: '100%', height: '100%', borderRadius: '50%' } })
+  },
+  {
+    title: {
+      en: "Business English Trainer",
+      fr: "Formateur  en anglais professionnel",
+    },
+    company: "Elysées Langues",
+    location: "Paris, France",
+    period: "2019 - 2023",
+    description: {
+      en: "Provided language training to professionals in corporate settings (executives, business teams, international profiles).",
+      fr: "Interventions auprès de professionnels en entreprise (cadres, équipes métiers, profils internationaux)."
+    },
+    responsibilities: {
+      en: [
+        "Delivered professional communication training to students in a corporate context.",
+        "Analysed business needs and adapted communication accordingly.",
+        "Facilitated sessions focused on efficiency, clarity, and tangible results.",
+        "Managed long-term educational relationships (objectives, feedback, adjustments).",
+        "Developed a consulting posture with individualized support."
+      ],
+      fr: [
+        "Fournir une formation en communication professionnelle aux élèves en contexte entreprise.",
+        "Analyser les besoins métier et adapter la communication en conséquence.",
+        "Faciliter des sessions axées sur l'efficacité, la clarté et des résultats tangibles.",
+        "Gérer des relations éducatives à long terme (objectifs, retours, ajustements).",
+        "Développer une posture de conseil avec un accompagnement individualisé."
+      ]
+    },
+    tech: [],
+    icon: React.createElement("img", { src: "/images/logos/elysees-langues-logo.png", alt: "Elysées Langues Logo", style: { width: '100%', height: '100%', borderRadius: '50%' } })
+  }
+] as const;
+

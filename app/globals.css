@@ -311,6 +311,14 @@
 
   /* Skills section styles END */
 
+  /* Experiences section styles START */
+
+  .section--experiences {
+    @apply pt-20 sm:py-20 w-[min(100%,60rem)] sm:scroll-m-40;
+  }
+
+  /* Experiences section styles END */
+
   /* Contact section styles */
 
   .section--contact {

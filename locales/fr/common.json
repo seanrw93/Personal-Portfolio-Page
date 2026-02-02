@@ -5,7 +5,7 @@
       "about": "À propos",
       "projects": "Projets",
       "skills": "Compétences",
-      "experience": "Expérience",
+      "experience": "Expériences",
       "contact": "Contact"
     },
     "hero": {
@@ -68,7 +68,8 @@
       "about": "À propos de moi",
       "projects": "Mes projets",
       "skills": "Mes compétences",
-      "contact": "Contactez-moi"
+      "contact": "Contactez-moi",
+      "experience": "Mes expériences"
     }
   }
 }

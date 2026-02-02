@@ -29,6 +29,7 @@ type CommonTranslations = {
     projects: string;
     skills: string;
     contact: string;
+    experience: string;
   }
   contact: Contact;
 };

@@ -12,10 +12,11 @@ export const About = () => {
     <motion.section 
       id="about" 
       className="section section--about"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
       ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.3 }}
     >
       <SectionHeading titleSection="about" />
       <AboutContent />

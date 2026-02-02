@@ -59,7 +59,7 @@ export const Intro = () => {
             transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
           >
             Hello, {name},{" "}
-            <span className="font-bold">
+            <span className="font-bold min-w-[250px] inline-block">
               <ReactTyped
                 strings={[role, freelance].flat()}
                 typeSpeed={60}
