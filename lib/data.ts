@@ -155,27 +155,55 @@ export const experiencesData = [
         "Participer activement aux rituels Agile/Scrum dans une logique d’amélioration continue et de qualité logicielle."
       ]
     },
-    tech: [],
+    skills: {
+      en: ["UI Integration", "Design System", "HTML / CSS / SCSS", "JavaScript (ES6+)", "Accessibility (WCAG / RGAA)", "Front-End Performance", "Agile / Cross-Team Collaboration"],
+      fr: ["Intégration UI", "Design System", "HTML / CSS / SCSS", "JavaScript (ES6+)", "Accessibilité (WCAG / RGAA)", "Performance Front-End", "Agile / Collaboration Inter-équipes"]
+    },
     icon: React.createElement("img", { src: "/images/logos/abeille-logo.png", alt: "Abeille Assurances Logo", style: { width: '100%', height: '100%', borderRadius: '50%' } })
   },
   {
     title: {
       en: "Degree in JavaScript React Application Development",
-      fr: "Formation diplômante en développement d'application JavaScript React",
+      fr: "Diplôme en développement d'application JavaScript React (Bac +4)",
     },
     company: "OpenClassrooms",
     location: "France",
-    period: "2025",
+    period: "2023 - 2025",
     description: {
       en: "Professional course focused on mastering front-end technologies (HTML, CSS, React, Redux, Webpack, etc.), with the completion of 14 real-world projects. These projects cover web integration, dynamic interface development, state management, performance optimization, testing, accessibility, and application deployment.",
-      fr: "Parcours professionnalisant axé sur la maîtrise des technologies front-end (HTML, CSS, React, Redux, Webpack, etc.), avec la réalisation de 14 projets concrets en conditions réelles. Ces projets couvrent l'intégration web, le development d'interfaces dynamiques, la gestion d'état, l'optimisation des performances, les tests, l'accessibilité, et le déploiement d'applications"
+      fr: "Formation professionnelle axée sur la maîtrise des technologies front-end (HTML, CSS, React, Redux, Webpack, etc.), avec la réalisation de 14 projets concrets. Ces projets couvrent l'intégration web, le développement d'interfaces dynamiques, la gestion d'état, l'optimisation des performances, les tests, l'accessibilité et le déploiement d'applications."
     },
     responsibilities: {
       en: [],
       fr: []
     },
-    tech: [],
+    skills: {
+      en: ["Front-End Development", "JavaScript / React", "Software Engineering", "Project-Based Learning"],
+      fr: ["Développement Front-End", "JavaScript / React", "Génie Logiciel", "Apprentissage par Projets"]
+    },
     icon: React.createElement("img", { src: "/images/logos/oc-logo.png", alt: "OpenClassrooms Logo", style: { width: '100%', height: '100%', borderRadius: '50%' } })
+  },
+  {
+    title: {
+      en: "Frontend Certificate",
+      fr: "Certificat en développement front-end",
+    },
+    company: "FreeCodeCamp",
+    location: "",
+    period: "2022 - 2023",
+    description: {
+      en: "Completed a comprehensive frontend development certificate program covering Responsive Web Design and JavaScript Algorithms and Data Structures (300 hours each).",
+      fr: "Complété un programme de certificat complet en développement front-end couvrant le Responsive Web Design et les Algorithmes et Structures de Données JavaScript (300 heures chacun)."
+    },
+    responsibilities: {
+      en: [],
+      fr: []
+    },
+    skills: {
+      en: ["Responsive Web Design", "JavaScript Algorithms", "Data Structures", "Problem Solving"],
+      fr: ["Design Web Responsive", "Algorithmes JavaScript", "Structures de Données", "Résolution de Problèmes"]
+    },
+    icon: React.createElement("img", { src: "/images/logos/fcc-logo.png", alt: "FreeCodeCamp Logo", style: { width: '100%', height: '100%', borderRadius: '50%' } })
   },
   {
     title: {
@@ -205,8 +233,11 @@ export const experiencesData = [
         "Développer une posture de conseil avec un accompagnement individualisé."
       ]
     },
-    tech: [],
+    skills: {
+      en: ["Corporate Training", "Business Communication", "Needs Analysis", "Client Relationship Management", "Consultative Approach", "Pedagogy"],
+      fr: ["Formation en entreprise", "Communication professionnelle", "Analyse des besoins", "Gestion relation client", "Approche consultative", "Pédagogie"]
+    },
     icon: React.createElement("img", { src: "/images/logos/elysees-langues-logo.png", alt: "Elysées Langues Logo", style: { width: '100%', height: '100%', borderRadius: '50%' } })
-  }
+  },
 ] as const;
 

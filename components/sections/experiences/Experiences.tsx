@@ -10,6 +10,8 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 import { experiencesData } from "@/lib/data";
+import { Skills } from "../skills/Skills";
+import { SkillsTags } from "@/components/ui/SkillsTags";
 
 export const Experiences = () => {
   const { locale, translations } = useTranslation();
@@ -33,7 +35,7 @@ export const Experiences = () => {
       icon={exp.icon}
       iconStyle={{
         objectFit: 'contain',
-        backgroundColor: 'transparent',
+        background: 'transparent',
         boxShadow: 'none'
       }}
     >
@@ -42,6 +44,10 @@ export const Experiences = () => {
       <p className="font-normal !mt-0">{exp.location}</p>
       {window.innerWidth <= 768 && <p className="text-xs !mt-0">{exp.period}</p>}
       <p>{exp.description[locale as "en" | "fr"]}</p>
+      <SkillsTags 
+        size={"0.5rem"} 
+        tags={exp.skills[locale as "en" | "fr"]} 
+      />
       {(() => {
         const [open, setOpen] = useState(false);
         return (
@@ -64,7 +70,7 @@ export const Experiences = () => {
                   />
                   <div>
                     <h2 className="text-2xl font-bold">{exp.title[locale as "en" | "fr"]}</h2>
-                    <p className="text-gray-600">{exp.company} - {exp.period}</p>
+                    <p className="text-gray-600">{exp.company} | {exp.period}</p>
                   </div>
                 </div>
               </Modal.Title>
@@ -96,7 +102,7 @@ export const Experiences = () => {
   return (
     <section className="section section--experiences" id="experience" ref={ref}>
         <SectionHeading>{experience}</SectionHeading>
-        <VerticalTimeline>{timelineElements}</VerticalTimeline>
+        <VerticalTimeline lineColor="#f5f5f5">{timelineElements}</VerticalTimeline>
     </section>
   )
 };

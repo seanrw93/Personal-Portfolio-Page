@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { SkillsTags } from "@/components/ui/SkillsTags";
 
 type ProjectCardProps = {
   title: string;
@@ -82,13 +83,7 @@ export const ProjectCard = ({
             See more
           </span>
         )}
-        <ul className="project-card__tags">
-          {tags.map((tag, tagIndex) => (
-            <li key={tagIndex} className="project-card__tag">
-              <span>{tag}</span>
-            </li>
-          ))}
-        </ul>
+        <SkillsTags size={"0.6rem"} tags={tags} />
       </div>
       <Image
         src={imageUrl || "/images/project-placeholder.png"}
