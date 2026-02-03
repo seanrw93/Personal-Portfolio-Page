@@ -73,9 +73,6 @@ export const Intro = () => {
             </span>,{" "}
             {specialisedIn}{" "}
             <span className="font-bold italic">{description}</span>
-            <br />
-            {focus}{" "}
-            <span className="underline">React (Next.js)</span>.
           </motion.p>
         </div>
         <motion.div
