@@ -32,9 +32,6 @@ export async function generateMetadata({
   return {
     title,
     description,
-    verification: {
-      google: "DaKsCzPVKKWbJ8svTpyqJruKDoE1tPqNXXm4Sc35XpQ",
-    },
     authors: [{ name: "Sean Roennau-Wergen" }],
     robots: "index, follow",
 
@@ -54,20 +51,6 @@ export async function generateMetadata({
       locale: isFrench ? "fr_FR" : "en_US",
       type: "website",
     },
-
-    other: {
-      "application/ld+json": JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Person",
-        name: "Sean Roennau-Wergen",
-        jobTitle: isFrench ? "Développeur Front-End" : "Front-End Developer",
-        url: `https://srw-dev.vercel.app/${locale}`,
-        sameAs: [
-          "https://www.linkedin.com/in/sean-roennau-wergen",
-          "https://github.com/seanrw93",
-        ],
-      }),
-    },
   };
 }
 
@@ -81,16 +64,34 @@ export default async function RootLayout({
   const { locale } = await params;
   const translations = getServerTranslation(locale);
 
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Sean Roennau-Wergen",
+    jobTitle: locale === "fr" ? "Développeur Front-End" : "Front-End Developer",
+    url: `https://srw-dev.vercel.app/${locale}`,
+    sameAs: [
+      "https://www.linkedin.com/in/sean-roennau-wergen",
+      "https://github.com/seanrw93",
+    ],
+  };
+
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.className} bg-primary-bg text-primary-text antialiased`}>
-        <TranslationProvider initialLocale={locale} initialTranslations={translations}>
-          <ScrollToTopButton />
-          <Header />
-          <main id="content">{children}</main>
-          <Analytics />
-        </TranslationProvider>
-      </body>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+      </head>
+        <body className={`${inter.className} bg-primary-bg text-primary-text antialiased`}>
+          <TranslationProvider initialLocale={locale} initialTranslations={translations}>
+            <ScrollToTopButton />
+            <Header />
+              {children}
+            <Analytics />
+          </TranslationProvider>
+        </body>
     </html>
   );
 }
