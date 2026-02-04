@@ -32,6 +32,9 @@ export async function generateMetadata({
   return {
     title,
     description,
+    verification: {
+      google: "DaKsCzPVKKWbJ8svTpyqJruKDoE1tPqNXXm4Sc35XpQ",
+    },
     authors: [{ name: "Sean Roennau-Wergen" }],
     robots: "index, follow",
 
