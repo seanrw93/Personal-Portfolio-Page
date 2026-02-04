@@ -85,6 +85,8 @@ export default async function RootLayout({
         />
       </head>
         <body className={`${inter.className} bg-primary-bg text-primary-text antialiased`}>
+          <div className="background-circle background-circle--pink"></div>
+          <div className="background-circle background-circle--purple"></div>
           <TranslationProvider initialLocale={locale} initialTranslations={translations}>
             <ScrollToTopButton />
             <Header />
