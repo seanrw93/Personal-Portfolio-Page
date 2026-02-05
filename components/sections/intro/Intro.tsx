@@ -58,7 +58,8 @@ export const Intro = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
           >
-            Hello, {name},{" "}
+            Hello, {name} 
+            <br />
             <span className="font-bold min-w-[250px] inline-block">
               <ReactTyped
                 strings={[role, freelance].flat()}
@@ -70,7 +71,8 @@ export const Intro = () => {
                 loop
                 onBegin={() => firstRun && setFirstRun(false)}
               />
-            </span>,{" "}
+            </span>
+            <br />
             {specialisedIn}{" "}
             <span className="font-bold italic">{description}</span>
           </motion.p>
