@@ -11,13 +11,21 @@ const Footer = () => {
   
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const modalTitles = modal ? Object.values(modal).map((item) => item.title) : [];
-  const modalContents = modal ? Object.values(modal).map((item) => item.content) : [];
+  const modalSectionsArray =
+    modal
+      ? Object.values(modal).filter(
+          (item): item is { title: string; content: string } =>
+            typeof item === "object" &&
+            item !== null &&
+            "title" in item &&
+            "content" in item
+        )
+      : [];
 
-  const modalSections = modalTitles.map((title, index) => (
+  const modalSections = modalSectionsArray.map((section, index) => (
     <div key={index} className="mb-4">
-      <h3 className="text-lg font-semibold text-gray-700">{title}</h3>
-      <p className="mt-2 text-gray-600">{modalContents[index]}</p>
+      <h3 className="text-lg font-semibold text-gray-700">{section.title}</h3>
+      <p className="mt-2 text-gray-600">{section.content}</p>
     </div>
   ));
 
