@@ -22,7 +22,7 @@ export const projectsData = [
     },
     tags: ["React", "Redux Toolkit", "React Bootstrap", "Vite", "Jest/Vitest", "React Testing Library", "Lighthouse"],
     links: {
-      github: "",
+      github: "https://github.com/seanrw93/HRNet",
       live: "https://hrnet-srw.vercel.app/",
     },
     imageUrl: "/images/projects/hrnet.png",
@@ -48,7 +48,7 @@ export const projectsData = [
     },
     tags: ["React", "Vite", "React Router", "Redux Toolkit", "Sass", "Axios", "REST API", "Node.js", "Express", "MongoDB", "JWT"],
     links: {
-      github: "https://github.com/seanrw93/remede-agence-OC-frontend",
+      github: "https://github.com/seanrw93/argent-bank",
       live: "https://argentbank-phi.vercel.app",
     },
     imageUrl: "/images/projects/argentbank.png",
@@ -61,7 +61,7 @@ export const projectsData = [
     },
     tags: ["React", "D3", "Fetch", "REST API", "JSDoc", "Figma"],
     links: {
-      github: "",
+      github: "https://github.com/seanrw93/sportsee-frontend",
       live: ""
     },
     imageUrl: "/images/projects/sportsee.png",

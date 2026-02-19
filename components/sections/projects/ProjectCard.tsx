@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { SkillsTags } from "@/components/ui/SkillsTags";
+import { BsGithub, BsBoxArrowUpRight} from "react-icons/bs";
 
 type ProjectCardProps = {
   title: string;
@@ -21,7 +22,7 @@ export const ProjectCard = ({
   title,
   description,
   tags,
-  link = null,
+  link,
   imageUrl,
   index,
 }: ProjectCardProps) => {
@@ -68,7 +69,27 @@ export const ProjectCard = ({
       style={{ scale: scaleProgress, opacity: opacityProgress }}
     >
       <div className="project-card__content">
-        <h3 className="project-card__title">{title}</h3>
+        <div className="project-card__header">
+          <h3 className="project-card__title">{title}</h3>
+          <div className="project-card__links">
+            <a 
+              href={link?.live || "#"} 
+              className={`project-card__link ${!link?.live ? "project-card__link--disabled" : ""}`} 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <BsBoxArrowUpRight size={24} aria-hidden="true" />
+            </a>
+            <a 
+              href={link?.github || "#"} 
+              className={`project-card__link ${!link?.github ? "project-card__link--disabled" : ""}`}
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <BsGithub size={24} aria-hidden="true" />
+            </a>
+          </div>
+        </div>
         <p
           className={
             "project-card__description" +

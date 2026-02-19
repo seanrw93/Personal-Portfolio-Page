@@ -252,15 +252,31 @@
 
   .project-card {
     @apply relative bg-gray-100 border border-black/5 py-4 px-5 
-            mb-3 sm:mb-5 last:mb-0 sm:pl-10 sm:pr-2 sm:pt-10 overflow-hidden cursor-pointer;
+            mb-3 sm:mb-5 last:mb-0 sm:pl-10 sm:pr-2 sm:pt-10 overflow-hidden;
   }
 
   .project-card__content {
     @apply sm:max-w-[50%] flex flex-col;
   }
 
+  .project-card__header {
+    @apply flex flex-row justify-between align-top  gap-3;
+  }
+
   .project-card__title {
     @apply text-xl font-semibold mb-2;
+  }
+
+  .project-card__links {
+    @apply flex justify-items-end align-top gap-4 mt-0 sm:ml-auto sm:mr-2;
+  }
+
+  .project-card__link {
+    @apply text-gray-600 hover:scale-105 hover:text-gray-900 transition-all duration-200 ease-in-out cursor-pointer;
+  }
+  
+  .project-card__link--disabled {
+    @apply text-gray-400 cursor-default hover:scale-100 hover:text-gray-400;
   }
 
   .project-card__description {
@@ -276,6 +292,8 @@
   .project-card__image--hovered {
     @apply sm:-rotate-3 sm:scale-110 transition-all duration-300 ease-in-out;
   }
+
+  
 
   /* Projects section styles END */
 
@@ -335,7 +353,7 @@
 
   .see-more {
     @apply mt-2 text-sm text-primary-blue underline decoration-dotted 
-          underline-offset-2;
+          underline-offset-2 cursor-pointer transition-all duration-200 ease-in-out;
   }
 
   .skills-tags {

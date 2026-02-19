@@ -18,7 +18,7 @@ export const Projects = () => {
       title={project.title}
       description={project.description[locale as "en" | "fr"]}
       tags={project.tags}
-      link={null}
+      link={project.links || null}
       imageUrl={project.imageUrl || null}
       index={index}
     />
