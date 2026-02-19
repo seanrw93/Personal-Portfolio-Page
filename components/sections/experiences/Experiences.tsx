@@ -10,7 +10,6 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 import { experiencesData } from "@/lib/data";
-import { Skills } from "../skills/Skills";
 import { SkillsTags } from "@/components/ui/SkillsTags";
 
 export const Experiences = () => {

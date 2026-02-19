@@ -7,6 +7,7 @@ import { ScrollToTopButton } from "@/components/buttons/ScrollToTopButton";
 import { TranslationProvider } from "@/context/TranslationContext";
 import { getServerTranslation } from "@/lib/translationServer";
 import { Analytics } from "@vercel/analytics/next";
+import Footer from "@/components/ui/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -90,7 +91,8 @@ export default async function RootLayout({
           <TranslationProvider initialLocale={locale} initialTranslations={translations}>
             <ScrollToTopButton />
             <Header />
-              {children}
+            {children}
+            <Footer />
             <Analytics />
           </TranslationProvider>
         </body>

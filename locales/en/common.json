@@ -22,13 +22,13 @@
       },
       "cta": "Explore my work"
     },
-"about": {
-  "p1": "Based in Paris, I’m a <span class=\"font-semibold\">trilingual front-end developer</span> (French, English, German) with a background in <span class=\"font-semibold\">teaching and professional communication</span>. I transitioned into web development in 2022 and quickly specialized in <span class=\"font-semibold\">UI integration and front-end quality</span> within structured, real-world environments.",
-  "p2": "In 2023, I joined a <span class=\"font-semibold\">two-year work-study program</span> in software development while working at <span class=\"font-semibold\">Abeille Assurances</span> as a <span class=\"font-semibold\">front-end developer / web integrator</span>. There, I contributed to high-visibility projects, design systems, and UI consistency across large-scale platforms.",
-  "p3": "My core stack includes <span class=\"font-semibold\">React and Next.js</span>, with strong foundations in <span class=\"font-semibold\">JavaScript</span>, UI architecture, and integration. I work comfortably within design systems, build <span class=\"font-semibold\">scalable and reusable components</span>, and collaborate closely with product and UX teams.",
-  "p4": "I approach front-end work with a focus on <span class=\"font-semibold\">maintainability, accessibility, performance</span>, and clear architectural decisions. I enjoy structuring clean codebases that scale across teams and are easy to understand and evolve.",
-  "p5": "I’m currently seeking a <span class=\"font-semibold\">full-time front-end or UI-focused role</span>, ideally in a consulting or product-driven environment where quality and collaboration matter."
-},
+    "about": {
+      "p1": "Based in Paris, I’m a <span class=\"font-semibold\">trilingual front-end developer</span> (French, English, German) with a background in <span class=\"font-semibold\">teaching and professional communication</span>. I transitioned into web development in 2022 and quickly specialized in <span class=\"font-semibold\">UI integration and front-end quality</span> within structured, real-world environments.",
+      "p2": "In 2023, I joined a <span class=\"font-semibold\">two-year work-study program</span> in software development while working at <span class=\"font-semibold\">Abeille Assurances</span> as a <span class=\"font-semibold\">front-end developer / web integrator</span>. There, I contributed to high-visibility projects, design systems, and UI consistency across large-scale platforms.",
+      "p3": "My core stack includes <span class=\"font-semibold\">React and Next.js</span>, with strong foundations in <span class=\"font-semibold\">JavaScript</span>, UI architecture, and integration. I work comfortably within design systems, build <span class=\"font-semibold\">scalable and reusable components</span>, and collaborate closely with product and UX teams.",
+      "p4": "I approach front-end work with a focus on <span class=\"font-semibold\">maintainability, accessibility, performance</span>, and clear architectural decisions. I enjoy structuring clean codebases that scale across teams and are easy to understand and evolve.",
+      "p5": "I’m currently seeking a <span class=\"font-semibold\">full-time front-end or UI-focused role</span>, ideally in a consulting or product-driven environment where quality and collaboration matter."
+    },
     "contact" : {
       "title": "Get in Touch",
       "description": "I'm currently open to new opportunities and collaborations. Whether you have a project in mind, want to discuss potential roles, or just want to say hello, feel free to reach out!",
@@ -68,6 +68,40 @@
       "skills": "My skills",
       "contact": "Get in touch",
       "experience": "My experience"
+    },
+    "footer": {
+      "footerContent": {
+        "cta": "Available for frontend roles & selective freelance collaborations",
+        "allRights": "All rights reserved",
+        "legalNotice": "Legal Notice"
+      },
+      "modal": {
+        "title": "Legal Notice",
+        "owner": {
+          "title": "Owner",
+          "content": "This website is owned and operated by Sean Roennau-Wergen."
+        },
+        "siren": {
+          "title": "SIREN",
+          "content": "993006964"
+        },
+        "hosting": {
+          "title": "Hosting",
+          "content": "This website is hosted by Vercel Inc., located at 340 S Lemon Ave #4133, Walnut, CA 91789, USA."
+        },
+        "legalRights": {
+          "title": "Legal Notice",
+          "content": "All content, including text, images, and code, is © 2026 Sean Roennau-Wergen. You are free to reference, share, or use code snippets for learning or inspiration purposes. Commercial reuse is not permitted without prior permission."
+        },
+        "personalData": {
+          "title": "Personal Data",
+          "content": "The personal information collected through this site is used solely to respond to contact requests and is not shared with third parties. For any questions regarding privacy, please contact me directly."
+        },  
+        "law": {
+          "title": "Applicable Law",
+          "content": "This website is governed by the laws of France."
+        }
+      }
     }
   }
 }

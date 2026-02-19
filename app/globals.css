@@ -349,6 +349,40 @@
           focus:border-transparent transition resize-none;
   }
 
+  /* Contact section styles END */
+
+  /* Footer styles */
+
+  .footer {
+    @apply bg-darkest-blue text-gray-300 py-8 text-center;
+  }
+
+  .footer-content {
+    @apply max-w-4xl mx-auto space-y-4;
+  }
+
+  .footer__cta {
+    @apply text-lg font-medium text-white;
+  }
+
+  .footer__contact {
+    @apply flex justify-center items-center gap-6 mt-4;
+  }
+
+  .footer__contact a {
+    @apply text-gray-300 hover:text-white transition-all duration-200 ease-in-out;
+  }
+
+  .footer__text {
+    @apply text-sm;
+  }
+
+  .footer__legal {
+    @apply text-sm underline hover:text-white outline-none border-none bg-transparent cursor-pointer transition-all duration-200 ease-in-out;
+  }
+
+  /* Footer styles END */
+
   /* Utility classes */
 
   .see-more {

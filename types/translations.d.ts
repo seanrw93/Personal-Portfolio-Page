@@ -30,7 +30,8 @@ type CommonTranslations = {
     skills: string;
     contact: string;
     experience: string;
-  }
+  },
+  footer: Footer;
   contact: Contact;
 };
 
@@ -63,6 +64,32 @@ type ContactForm = {
   success: string;
   error: string;
 }
+
+type Footer = {
+  footerContent: FooterContent;
+  modal: FooterModal;
+}
+
+type FooterContent = {
+  legalNotice: string;
+  allRights: string;
+  cta: string;
+}
+
+type FooterModal = {
+  title: string;
+  owner: FooterModalSection;
+  siren: FooterModalSection;
+  hosting: FooterModalSection;
+  legalRights: FooterModalSection;
+  personalData: FooterModalSection;
+  law: FooterModalSection;
+}
+
+type FooterModalSection = {
+  title: string;
+  content: string;
+} | string;
 
 export type Translations = {
   common: CommonTranslations;

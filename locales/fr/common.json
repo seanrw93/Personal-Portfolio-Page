@@ -69,6 +69,40 @@
       "skills": "Mes compétences",
       "contact": "Contactez-moi",
       "experience": "Mes expériences"
+    },
+    "footer": {
+      "footerContent": {
+        "cta": "Disponible pour des rôles frontend & collaborations freelance sélectives",
+        "allRights": "Tous droits réservés",
+        "legalNotice": "Mentions légales"
+      },
+      "modal": {
+        "title": "Mentions légales",
+        "owner": {
+          "title": "Propriétaire du site",
+          "content": "Ce site est la propriété de Sean Roennau-Wergen, développeur front-end basé à Paris."
+        },
+        "siren": {
+          "title": "SIREN",
+          "content": "993006964"
+        },
+        "hosting": {
+          "title": "Hébergement",
+          "content": "Ce site est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA."
+        },
+        "legalRights": {
+          "title": "Mentions légales",
+          "content": "Tout le contenu, y compris les textes, images et code, est © 2026 Sean Roennau-Wergen. Vous êtes libre de référencer, partager ou utiliser des extraits de code à des fins d’apprentissage ou d’inspiration. La réutilisation commerciale n’est pas autorisée sans permission préalable."
+        },
+        "personalData": {
+          "title": "Données personnelles",
+          "content": "Les informations personnelles collectées via ce site sont utilisées uniquement pour répondre aux demandes de contact et ne sont pas partagées avec des tiers. Pour toute question concernant la confidentialité, veuillez me contacter."
+        },
+        "law": {
+          "title": "Droit applicable",
+          "content": "Ce site est soumis au droit français."
+        }
+      }
     }
   }
-}
+} 
