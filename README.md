@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sean Roennau-Wergen — Personal Portfolio
+
+Personal portfolio built with Next.js to showcase my profile, projects, experience, and skills. Fully responsive with i18n support (EN/FR), SEO optimisations, and a working contact form with email notifications.
+
+**Live site**: [srw-dev.vercel.app](https://srw-dev.vercel.app)
+
+---
+
+## Features
+
+- **Bilingual (EN/FR)** — full i18n via locale JSON files and a custom `TranslationContext`
+- **Animated hero** — typed role cycling with `react-typed`
+- **Experience timeline** — vertical timeline with modal detail views per role
+- **Projects showcase** — filterable project cards with live and GitHub links
+- **Skills grid** — categorised skill tags
+- **Contact form** — functional form with email delivery via Resend
+- **Responsive design** — mobile-first layout with Tailwind CSS
+- **Accessibility** — WCAG/RGAA compliant with proper ARIA attributes throughout
+- **Performance** — lazy loading, memoisation, optimised fonts via `next/font`
+- **Legal notice** — GDPR-compliant modal with French legal mentions
+
+---
+
+## Tech Stack
+
+| Layer | Stack |
+|---|---|
+| Framework | Next.js (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Animations | Framer Motion |
+| Typed text | react-typed |
+| Timeline | react-vertical-timeline-component |
+| Email | Resend |
+| Deployment | Vercel |
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18+
+- A [Resend](https://resend.com) account for the contact form
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/seanrw93/Personal-Portfolio-Page.git
+   cd Personal-Portfolio-Page
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Create a `.env.local` file at the root:
+   ```
+   RESEND_API_KEY=your_resend_api_key
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Internationalisation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site supports English and French. Locale is detected automatically via `middleware.ts` and routed under `/en` and `/fr`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All translatable strings live in `locales/en.json` and `locales/fr.json` and are consumed via `TranslationContext`. To add a new language, add a new locale file and extend the middleware config.
+
+---
+
+## Deployment
+
+The site is deployed on Vercel with automatic deployments on push to `main`. To deploy your own instance:
+
+1. Push the repo to GitHub
+2. Import the project on [vercel.com](https://vercel.com)
+3. Add your `RESEND_API_KEY` environment variable in the Vercel dashboard
+4. Deploy
+
+---
+
+## About
+
+Built as part of my **M2 Expert en développement logiciel (RNCP 7)** at OpenClassrooms. I'm currently seeking an **alternance (contrat d'apprentissage)** in full-stack JavaScript development.
+
+- [LinkedIn](https://www.linkedin.com/in/sean-roennau-wergen)
+- [GitHub](https://github.com/seanrw93)
+
+---
+
+## License
+
+© 2026 Sean Roennau-Wergen. All rights reserved.
