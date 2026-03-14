@@ -61,20 +61,22 @@ export const Intro = () => {
             Hello, {name} 
             <br />
             <span className="font-bold min-w-[250px] inline-block">
-              <ReactTyped
-                strings={[role, freelance].flat()}
-                typeSpeed={60}
-                backSpeed={50}
-                startDelay={firstRun ? 1000 : 100}
-                backDelay={800}
-                smartBackspace
-                loop
-                onBegin={() => firstRun && setFirstRun(false)}
-              />
+            <ReactTyped
+              strings={[role, freelance].flat()}
+              typeSpeed={60}
+              backSpeed={50}
+              startDelay={firstRun ? 1000 : 100}
+              backDelay={800}
+              smartBackspace
+              loop
+              onBegin={() => firstRun && setFirstRun(false)}
+            />
             </span>
             <br />
             {specialisedIn}{" "}
             <span className="font-bold italic">{description}</span>
+            <br />
+            {focus} <span className="font-bold"> React / Next.js.</span>
           </motion.p>
         </div>
         <motion.div

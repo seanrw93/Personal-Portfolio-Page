@@ -14,24 +14,24 @@
         "name": "I'm Sean",
         "greeting": "Welcome to my personal portfolio website.",
         "rolePrefix": "I'm a",
-        "role": "Frontend Developer",
-        "freelance": "Freelancer",
+        "role": "Full-Stack Developer",
+        "freelance": "Front-end at heart, back-end by necessity",
         "specialisedIn": "specialised in",
-        "description": "accessible, responsive, and modular web interfaces.",
+        "description": "scalable, accessible, and full-stack JavaScript applications.",
         "focus": "My focus is"
       },
       "cta": "Explore my work"
     },
     "about": {
-      "p1": "Based in Paris, I’m a <span class=\"font-semibold\">trilingual front-end developer</span> (French, English, German) with a background in <span class=\"font-semibold\">teaching and professional communication</span>. I transitioned into web development in 2022 and quickly specialized in <span class=\"font-semibold\">UI integration and front-end quality</span> within structured, real-world environments.",
-      "p2": "In 2023, I joined a <span class=\"font-semibold\">two-year work-study program</span> in software development while working at <span class=\"font-semibold\">Abeille Assurances</span> as a <span class=\"font-semibold\">front-end developer / web integrator</span>. There, I contributed to high-visibility projects, design systems, and UI consistency across large-scale platforms.",
-      "p3": "My core stack includes <span class=\"font-semibold\">React and Next.js</span>, with strong foundations in <span class=\"font-semibold\">JavaScript</span>, UI architecture, and integration. I work comfortably within design systems, build <span class=\"font-semibold\">scalable and reusable components</span>, and collaborate closely with product and UX teams.",
-      "p4": "I approach front-end work with a focus on <span class=\"font-semibold\">maintainability, accessibility, performance</span>, and clear architectural decisions. I enjoy structuring clean codebases that scale across teams and are easy to understand and evolve.",
-      "p5": "I’m currently seeking a <span class=\"font-semibold\">full-time front-end or UI-focused role</span>, ideally in a consulting or product-driven environment where quality and collaboration matter."
+      "p1": "Based in Paris, I'm a <span class=\"font-semibold\">trilingual full-stack developer</span> (French, English, German) with a background in <span class=\"font-semibold\">teaching and professional communication</span>. I transitioned into web development in 2022, starting from the front-end before progressively building out my <span class=\"font-semibold\">back-end and full-stack expertise</span>.",
+      "p2": "In 2023, I joined a <span class=\"font-semibold\">two-year work-study program</span> while working at <span class=\"font-semibold\">Abeille Assurances</span> as a <span class=\"font-semibold\">front-end developer / web integrator</span>. There I contributed to high-visibility projects, design systems, and UI consistency across large-scale platforms, while continuing to develop my skills on the back end.",
+      "p3": "My stack spans both sides: <span class=\"font-semibold\">React, Next.js, and TypeScript</span> on the front, and <span class=\"font-semibold\">Node.js, Express, and PostgreSQL</span> on the back. I build REST APIs, handle authentication flows, manage databases, and connect everything through clean, maintainable architecture.",
+      "p4": "I approach development with a focus on <span class=\"font-semibold\">maintainability, accessibility, and performance</span>, whether that's structuring a component library or designing a secure server-side flow. I enjoy working across the stack and collaborating closely with product, UX, and back-end teams.",
+      "p5": "I'm currently seeking an <span class=\"font-semibold\">alternance placement</span> as part of my <span class=\"font-semibold\">M2 Expert en développement logiciel (RNCP 7)</span> at OpenClassrooms, ideally in a team where both front-end quality and back-end rigour are valued."
     },
-    "contact" : {
+    "contact": {
       "title": "Get in Touch",
-      "description": "I'm currently open to new opportunities and collaborations. Whether you have a project in mind, want to discuss potential roles, or just want to say hello, feel free to reach out!",
+      "description": "I'm currently looking for an alternance opportunity as part of my M2 in Full-Stack JavaScript development. Whether you have a role in mind, want to discuss a project, or just want to say hello, feel free to reach out!",
       "email": "You can contact me via the form below",
       "linkedin": "or connect with me on LinkedIn ",
       "lookingForward": "I look forward to hearing from you!",
@@ -71,7 +71,7 @@
     },
     "footer": {
       "footerContent": {
-        "cta": "Available for frontend roles & selective freelance collaborations",
+        "cta": "Seeking alternance (M2) — open to full-stack & front-end opportunities",
         "allRights": "All rights reserved",
         "legalNotice": "Legal Notice"
       },
@@ -96,7 +96,7 @@
         "personalData": {
           "title": "Personal Data",
           "content": "The personal information collected through this site is used solely to respond to contact requests and is not shared with third parties. For any questions regarding privacy, please contact me directly."
-        },  
+        },
         "law": {
           "title": "Applicable Law",
           "content": "This website is governed by the laws of France."

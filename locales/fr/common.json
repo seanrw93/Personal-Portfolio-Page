@@ -14,25 +14,25 @@
         "name": "je suis Sean",
         "greeting": "Bienvenue sur mon site portfolio personnel.",
         "rolePrefix": "Je suis un",
-        "role": "Développeur Front-end",
-        "freelance": "Freelance",
+        "role": "Développeur Full-Stack",
+        "freelance": "En recherche d'alternance — contrat d'apprentissage",
         "specialisedIn": "spécialisé dans les",
-        "description": "interfaces web accessibles, responsives et modulaires.",
+        "description": "applications JavaScript full-stack, accessibles et scalables.",
         "focus": "Mon focus est"
       },
       "cta": "Découvrez mon travail",
-      "cvUrl": "/files/CV__ROENNAU-WERGEN_SEAN_fr.pdf"
+      "cvUrl": "/files/CV__FULLSTACK_SEAN_ROENNAU-WERGEN_ALTERNANCE.pdf"
     },
     "about": {
-      "p1": "Basé à Paris, je suis <span class=\"font-semibold\">développeur front-end trilingue</span> (français, anglais, allemand), issu d’un parcours initial en <span class=\"font-semibold\">enseignement et communication professionnelle</span>. Je me suis reconverti vers le développement web en 2022, avec une spécialisation rapide en <span class=\"font-semibold\">intégration UI et qualité front-end</span> dans des environnements structurés.",
-      "p2": "En 2023, j’ai intégré un <span class=\"font-semibold\">parcours en alternance de deux ans</span> en développement logiciel, tout en travaillant chez <span class=\"font-semibold\">Abeille Assurances</span> en tant que <span class=\"font-semibold\">développeur front-end / intégrateur web</span>. J’y ai contribué à des projets à forte visibilité, à l’évolution de design systems et à la cohérence des interfaces sur des plateformes à grande échelle.",
-      "p3": "Mon socle technique repose principalement sur <span class=\"font-semibold\">React et Next.js</span>, avec une maîtrise solide du <span class=\"font-semibold\">JavaScript</span> et des enjeux d’architecture front-end et d’intégration UI. Je travaille au quotidien avec des design systems et conçois des <span class=\"font-semibold\">composants réutilisables, maintenables et scalables</span>.",
-      "p4": "J’aborde le front-end avec une attention particulière portée à la <span class=\"font-semibold\">maintenabilité</span>, à l’<span class=\"font-semibold\">accessibilité</span> et à la <span class=\"font-semibold\">performance</span>. J’apprécie structurer des codebases claires, cohérentes et faciles à prendre en main, en collaboration étroite avec les équipes produit et UX.",
-      "p5": "Je suis actuellement à la recherche d’un <span class=\"font-semibold\">poste à temps plein en développement front-end</span>, avec un positionnement orienté UI, idéalement dans un contexte de <span class=\"font-semibold\">produit ou de conseil</span> où la qualité et la collaboration sont centrales."
+      "p1": "Basé à Paris, je suis <span class=\"font-semibold\">développeur full-stack trilingue</span> (français, anglais, allemand), issu d'un parcours initial en <span class=\"font-semibold\">enseignement et communication professionnelle</span>. Je me suis reconverti vers le développement web en 2022, en partant du front-end avant de développer progressivement mes compétences <span class=\"font-semibold\">back-end et full-stack</span>.",
+      "p2": "En 2023, j'ai intégré un <span class=\"font-semibold\">parcours en alternance de deux ans</span> en développement logiciel, tout en travaillant chez <span class=\"font-semibold\">Abeille Assurances</span> en tant que <span class=\"font-semibold\">développeur front-end / intégrateur web</span>. J'y ai contribué à des projets à forte visibilité, à l'évolution de design systems et à la cohérence des interfaces sur des plateformes à grande échelle, tout en continuant à renforcer mes compétences côté back-end.",
+      "p3": "Mon stack couvre les deux côtés : <span class=\"font-semibold\">React, Next.js et TypeScript</span> côté front, et <span class=\"font-semibold\">Node.js, Express et PostgreSQL</span> côté back. Je conçois des APIs REST, gère des flux d'authentification, modélise des bases de données et assemble le tout dans une architecture propre et maintenable.",
+      "p4": "J'aborde le développement avec une attention particulière portée à la <span class=\"font-semibold\">maintenabilité</span>, à l'<span class=\"font-semibold\">accessibilité</span> et à la <span class=\"font-semibold\">performance</span>, que ce soit pour structurer une librairie de composants ou concevoir un flux sécurisé côté serveur. J'apprécie travailler sur toute la chaîne et collaborer étroitement avec les équipes produit, UX et back-end.",
+      "p5": "Je suis actuellement à la recherche d'une <span class=\"font-semibold\">alternance</span> dans le cadre de mon <span class=\"font-semibold\">Master Expert en développement logiciel (RNCP 7)</span> chez OpenClassrooms, idéalement dans une équipe où la qualité front-end et la rigueur back-end sont toutes deux valorisées."
     },
-    "contact" : {
+    "contact": {
       "title": "Contactez-moi",
-      "description": "Je suis actuellement ouvert à de nouvelles opportunités et collaborations. Que vous ayez un projet en tête, que vous souhaitiez discuter de rôles potentiels ou simplement dire bonjour, n'hésitez pas à me contacter !",
+      "description": "Je suis actuellement à la recherche d'une alternance dans le cadre de mon M2 en développement Full-Stack JavaScript. Que vous ayez un poste en tête, souhaitiez discuter d'un projet ou simplement dire bonjour, n'hésitez pas à me contacter !",
       "email": "Vous pouvez me contacter via le formulaire ci-dessous",
       "linkedin": "ou connectez-vous avec moi sur LinkedIn ",
       "lookingForward": "J'ai hâte d'avoir de vos nouvelles !",
@@ -72,7 +72,7 @@
     },
     "footer": {
       "footerContent": {
-        "cta": "Disponible pour des rôles frontend & collaborations freelance sélectives",
+        "cta": "En recherche d'alternance (M2) — ouvert aux opportunités full-stack et front-end",
         "allRights": "Tous droits réservés",
         "legalNotice": "Mentions légales"
       },
@@ -80,7 +80,7 @@
         "title": "Mentions légales",
         "owner": {
           "title": "Propriétaire du site",
-          "content": "Ce site est la propriété de Sean Roennau-Wergen, développeur front-end basé à Paris."
+          "content": "Ce site est la propriété de Sean Roennau-Wergen, développeur full-stack basé à Paris."
         },
         "siren": {
           "title": "SIREN",
@@ -92,7 +92,7 @@
         },
         "legalRights": {
           "title": "Mentions légales",
-          "content": "Tout le contenu, y compris les textes, images et code, est © 2026 Sean Roennau-Wergen. Vous êtes libre de référencer, partager ou utiliser des extraits de code à des fins d’apprentissage ou d’inspiration. La réutilisation commerciale n’est pas autorisée sans permission préalable."
+          "content": "Tout le contenu, y compris les textes, images et code, est © 2026 Sean Roennau-Wergen. Vous êtes libre de référencer, partager ou utiliser des extraits de code à des fins d'apprentissage ou d'inspiration. La réutilisation commerciale n'est pas autorisée sans permission préalable."
         },
         "personalData": {
           "title": "Données personnelles",
@@ -105,4 +105,4 @@
       }
     }
   }
-} 
+}

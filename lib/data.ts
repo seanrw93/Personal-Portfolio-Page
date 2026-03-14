@@ -15,6 +15,19 @@ export const projectsData = [
     imageUrl: "/images/projects/portfolio.png",
   },
   {
+    title: "Spiral Sounds",
+    description: {
+      en: "A fullstack music store built with vanilla JS, Node.js, and PostgreSQL. Features product browsing with search and genre filtering, cart management, Stripe payment integration, and a complete user authentication system.",
+      fr: "Une boutique de musique fullstack construite avec du JS vanilla, Node.js et PostgreSQL. Comprend la navigation produits avec recherche et filtres par genre, gestion du panier, intégration des paiements Stripe, et un système d'authentification utilisateur complet.",
+    },
+    tags: ["JavaScript", "Node.js", "Express.js", "PostgreSQL", "Stripe", "HTML/CSS"],
+    links: {
+      github: "https://github.com/seanrw93/spiral-sounds",
+      live: "https://srw-spiral-sounds.netlify.app/",
+    },
+    imageUrl: "/images/projects/spiral-homepage.png",
+  },
+  {
     title: "HRnet",
     description: {
       en: "Rebuilt the internal HRnet app by switching from jQuery to React + Vite for better performance and easier maintenance. Converted a key jQuery plugin into a clean, modular React component with modern state handling. Used Redux Toolkit for global state and ran Lighthouse tests to compare performance before and after.",
@@ -121,7 +134,26 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML5", "CSS3", "Sass", "Bootstrap", "JavaScript (ES6+)", "TypeScript", "React", "Next.js", "Vite", "Redux", "Angular", "Node.js", "Express", "MongoDB", "REST APIs", "Jest", "Vitest", "React Testing Library", "Git", "GitHub", "Figma", "Framer Motion", "Responsive Design", "Accessibility (WCAG/RGAA)"
+  // Core languages
+  "HTML5", "CSS3", "Sass", "JavaScript (ES6+)", "TypeScript",
+
+  // Frontend
+  "React", "Next.js", "Redux Toolkit", "Tailwind CSS", "Framer Motion", "Vite",
+
+  // Backend
+  "Node.js", "Express", "REST APIs", "PostgreSQL",
+
+  // Auth & Security
+  "JWT", "Sessions & Cookies",
+
+  // Testing
+  "Jest", "Vitest", "React Testing Library",
+
+  // Tooling & DevOps
+  "Git", "GitHub", "CI/CD (Jenkins / Vercel)", "ESLint", "Prettier",
+
+  // Design & UX
+  "Figma", "Responsive Design", "Accessibility (WCAG/RGAA)", "Atomic Design",
 ] as const;
 
 export const experiencesData = [
