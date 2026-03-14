@@ -21,7 +21,7 @@
         "focus": "Mon focus est"
       },
       "cta": "Découvrez mon travail",
-      "cvUrl": "/files/CV__FULLSTACK_SEAN_ROENNAU-WERGEN_ALTERNANCE.pdf"
+      "cvUrl": "/files/CV__ROENNAU-WERGEN_SEAN_fr.pdf"
     },
     "about": {
       "p1": "Basé à Paris, je suis <span class=\"font-semibold\">développeur full-stack trilingue</span> (français, anglais, allemand), issu d'un parcours initial en <span class=\"font-semibold\">enseignement et communication professionnelle</span>. Je me suis reconverti vers le développement web en 2022, en partant du front-end avant de développer progressivement mes compétences <span class=\"font-semibold\">back-end et full-stack</span>.",

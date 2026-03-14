@@ -9,7 +9,7 @@ export const projectsData = [
     },
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Resend", "Vercel"],
     links: {
-      github: "https://github.com/seanrw93/Personal-Portfolio-Page",
+      github: "https://github.com/seanrw93/Personal-Portfolio-Page/tree/alternance",
       live: "https://srw-dev.vercel.app/",
     },
     imageUrl: "/images/projects/portfolio.png",
