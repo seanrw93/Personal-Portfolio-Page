@@ -23,8 +23,8 @@ export async function generateMetadata({
   const isFrench = locale === "fr";
 
   const title = isFrench
-    ? "Développeur Front-End React à Paris | Sean Roennau-Wergen"
-    : "Front-End React Developer in Paris | Sean Roennau-Wergen";
+    ? "Développeur Full-Stack à Paris | Sean Roennau-Wergen"
+    : "Full-Stack Developer in Paris | Sean Roennau-Wergen";
 
   const description = isFrench
     ? "Développeur front-end spécialisé en intégration UI, React et Next.js. Expérience en design systems, accessibilité et performance."
