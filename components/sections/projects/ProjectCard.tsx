@@ -40,19 +40,19 @@ export const ProjectCard = ({
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  useEffect(() => {
-    if (!isHovered) {
-      scrolledOnceRef.current = false;
-      return;
-    }
-    if (cardRef.current && !scrolledOnceRef.current) {
-      scrolledOnceRef.current = true;
-      cardRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-      });
-    }
-  }, [isHovered]);
+  // useEffect(() => {
+  //   if (!isHovered) {
+  //     scrolledOnceRef.current = false;
+  //     return;
+  //   }
+  //   if (cardRef.current && !scrolledOnceRef.current) {
+  //     scrolledOnceRef.current = true;
+  //     cardRef.current.scrollIntoView({
+  //       behavior: "smooth",
+  //       block: "nearest",
+  //     });
+  //   }
+  // }, [isHovered]);
 
   return (
     <motion.div
