@@ -28,6 +28,19 @@ export const projectsData = [
     imageUrl: "/images/projects/spiral-homepage.png",
   },
   {
+    title: "Pokélytica",
+    description: {
+      en: "A Pokémon battle outcome predictor built with Next.js and TypeScript. Users build two teams via the PokéAPI and receive a full type-matchup breakdown alongside an AI-generated analysis powered by a Groq LLM, which evaluates stats, weaknesses, and team composition to predict the likely battle outcome. Currently in active development.",
+      fr: "Un prédicteur de résultats de combat Pokémon construit avec Next.js et TypeScript. Les utilisateurs composent deux équipes via la PokéAPI et reçoivent une analyse complète des correspondances de types ainsi qu'une analyse générée par un LLM Groq, qui évalue les statistiques, les faiblesses et la composition des équipes pour prédire l'issue probable du combat. Actuellement en cours de développement."
+    },
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "REST API", "Groq", "LLM Integration", "AI"],    
+    links: {
+      github: "https://github.com/seanrw93/pokelytica",
+      live: "https://pokelytica.vercel.app/team-builder",
+    },
+    imageUrl: "/images/projects/pokelytca.png",
+  },
+  {
     title: "HRnet",
     description: {
       en: "Rebuilt the internal HRnet app by switching from jQuery to React + Vite for better performance and easier maintenance. Converted a key jQuery plugin into a clean, modular React component with modern state handling. Used Redux Toolkit for global state and ran Lighthouse tests to compare performance before and after.",
