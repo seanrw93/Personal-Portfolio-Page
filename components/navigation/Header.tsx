@@ -84,13 +84,16 @@ useEffect(() => {
         animate={{ y: 0, x: "-50%" }}
         transition={{ type: "spring" }}
       >
-        <button 
-          className="header-nav__burger" 
+        <button
+          className="header-nav__burger"
           onClick={toggleMenu}
+          aria-expanded={navOpen}
+          aria-controls="primary-nav"
+          aria-label={aria.menuToggle}
         >
-          <span className={navOpen ? "open" : ""}></span>
+          <span className={navOpen ? "open" : ""} aria-hidden="true"></span>
         </button>
-        <nav className="header-nav__content" aria-label={aria.primary}>
+        <nav id="primary-nav" className="header-nav__content" aria-label={aria.primary}>
           <ul className="nav-list">
             {navLinks}
             <motion.li

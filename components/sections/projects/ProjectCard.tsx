@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { SkillsTags } from "@/components/ui/SkillsTags";
 import { BsGithub, BsBoxArrowUpRight} from "react-icons/bs";
+import { useTranslation } from "@/context/TranslationContext";
 
 type ProjectCardProps = {
   title: string;
@@ -29,8 +30,10 @@ export const ProjectCard = ({
   const [isHovered, setIsHovered] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
 
+  const { translations } = useTranslation();
+  const ariaNav = translations?.common?.aria?.navigation as { [key: string]: string } | undefined;
+
   const cardRef = useRef<HTMLDivElement>(null);
-  const scrolledOnceRef = useRef(false);
 
   const { scrollYProgress } = useScroll({
     target: cardRef,
@@ -63,7 +66,6 @@ export const ProjectCard = ({
       onFocus={() => setIsFocused(true)}
       onBlur={() => setIsFocused(false)}
       ref={cardRef}
-      role="article"
       tabIndex={0}
       aria-label={`Project: ${title}`}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
@@ -72,19 +74,23 @@ export const ProjectCard = ({
         <div className="project-card__header">
           <h3 className="project-card__title">{title}</h3>
           <div className="project-card__links">
-            <a 
-              href={link?.live || "#"} 
-              className={`project-card__link ${!link?.live ? "project-card__link--disabled" : ""}`} 
-              target="_blank" 
+            <a
+              href={link?.live || "#"}
+              className={`project-card__link ${!link?.live ? "project-card__link--disabled" : ""}`}
+              target="_blank"
               rel="noopener noreferrer"
+              aria-label={ariaNav?.liveDemo?.replace("{{title}}", title) ?? `View live demo of ${title}`}
+              aria-disabled={!link?.live}
             >
               <BsBoxArrowUpRight size={24} aria-hidden="true" />
             </a>
-            <a 
-              href={link?.github || "#"} 
+            <a
+              href={link?.github || "#"}
               className={`project-card__link ${!link?.github ? "project-card__link--disabled" : ""}`}
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
+              aria-label={ariaNav?.githubProject?.replace("{{title}}", title) ?? `View ${title} source code on GitHub`}
+              aria-disabled={!link?.github}
             >
               <BsGithub size={24} aria-hidden="true" />
             </a>
@@ -95,7 +101,6 @@ export const ProjectCard = ({
             "project-card__description" +
             (isFocused ? " sm:max-h-[50rem]" : " sm:max-h-[6.25rem] line-clamp-3")
           }
-          aria-expanded={isFocused ? "true" : "false"}
         >
           {description}
         </p>

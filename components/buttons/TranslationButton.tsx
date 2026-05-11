@@ -9,33 +9,30 @@ type TranslationButtonProps = {
   ariaLabel?: string;
 };
 
-export const TranslationButton = ({ className = "", ariaLabel= ""}: TranslationButtonProps) => {
+export const TranslationButton = ({ className = "", ariaLabel = "" }: TranslationButtonProps) => {
   const pathname = usePathname();
   const { locale } = useTranslation();
 
-  // Remove hash from pathname for href generation
   const pathWithoutHash = pathname.split('#')[0];
-  
-  // Get current hash if it exists
   const currentHash = typeof window !== "undefined" ? window.location.hash : "";
 
-  // Generate hrefs without hash
   const enHref = pathWithoutHash.replace(/^\/(en|fr)/, "/en");
   const frHref = pathWithoutHash.replace(/^\/(en|fr)/, "/fr");
 
   const handleLinkClick = (newLocale: string) => {
-    // Preserve hash when switching languages
     if (currentHash) {
       window.history.replaceState(null, "", `/${newLocale}${currentHash}`);
     }
   };
 
   return (
-    <div className="flex place-items-center text-blue-400 gap-2" aria-label={ariaLabel}>
+    <div className="flex place-items-center text-blue-400 gap-2">
+      {ariaLabel && <span className="sr-only">{ariaLabel}</span>}
       <Link
         href={enHref}
         scroll={false}
-        aria-current={pathname.startsWith("/en") ? "page" : undefined}
+        aria-current={locale === "en" ? "true" : undefined}
+        aria-label="English"
         className={
           className +
           (pathname.startsWith("/en") ? " font-bold underline" : " ")
@@ -44,11 +41,12 @@ export const TranslationButton = ({ className = "", ariaLabel= ""}: TranslationB
       >
         en
       </Link>
-      <span className="text-base-gray">|</span>
+      <span className="text-base-gray" aria-hidden="true">|</span>
       <Link
         href={frHref}
         scroll={false}
-        aria-current={pathname.startsWith("/fr") ? "page" : undefined}
+        aria-current={locale === "fr" ? "true" : undefined}
+        aria-label="Français"
         className={
           className +
           (pathname.startsWith("/fr") ? " font-bold underline" : " ")

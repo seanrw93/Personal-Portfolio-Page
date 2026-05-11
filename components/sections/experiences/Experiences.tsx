@@ -78,8 +78,9 @@ export const Experiences = () => {
               <button
                 onClick={() => setOpenIndex(index)}
                 className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 my-2 ml-auto"
+                aria-label={`${locale === "en" ? "More info about" : "Plus d'infos sur"} ${exp.title[locale as "en" | "fr"]}`}
               >
-                More Info
+                {locale === "en" ? "More Info" : "Plus d'infos"}
               </button>
             )}
 
@@ -87,16 +88,18 @@ export const Experiences = () => {
             <Modal
               isOpen={openIndex === index}
               onClose={() => setOpenIndex(null)}
+              labelId="exp-modal-title"
             >
               <Modal.Title>
                 <div className="sm:flex sm:flex-row">
                   <img
                     src={exp.icon.props.src || "/images/placeholder.png"}
-                    alt={exp.icon.props.alt || "Experience Image"}
+                    alt=""
                     className="w-32 h-32 object-cover mb-4 rounded-lg mr-4"
+                    aria-hidden="true"
                   />
                   <div>
-                    <h2 className="text-2xl font-bold">
+                    <h2 id="exp-modal-title" className="text-2xl font-bold">
                       {exp.title[locale as "en" | "fr"]}
                     </h2>
                     <p className="text-gray-600">
@@ -126,7 +129,7 @@ export const Experiences = () => {
                   onClick={() => setOpenIndex(null)}
                   className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700"
                 >
-                  Close
+                  {locale === "en" ? "Close" : "Fermer"}
                 </button>
               </Modal.Actions>
             </Modal>

@@ -91,31 +91,34 @@ export const Intro = () => {
             aria-label={aria.navigation.link.replace("{{section}}", "contact")}
           >
             <span>{btn.contactMe}</span>
-            <BsArrowRight className="group-hover:translate-x-1 transition-transform" />
+            <BsArrowRight aria-hidden="true" className="group-hover:translate-x-1 transition-transform" />
           </Link>
           <a
             href={url.cv}
             download
             className="btn-secondary group inline-flex items-center justify-center space-x-2"
+            aria-label={aria.navigation.downloadCv}
           >
             <span>{btn.downloadCv}</span>
-            <HiDownload className="group-hover:translate-x-1 transition-transform" />
+            <HiDownload aria-hidden="true" className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             className="btn-secondary p-4 inline-flex items-center justify-center space-x-2"
             href={url.linkedin}
             target="_blank"
+            rel="noopener noreferrer"
             aria-label={aria.navigation.linkedin}
           >
-            <BsLinkedin />
+            <BsLinkedin aria-hidden="true" />
           </a>
           <a
             className="btn-secondary p-4 inline-flex items-center justify-center space-x-2"
             href="https://github.com/seanrw93"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label={aria.navigation.github}
           >
-            <BsGithub />
+            <BsGithub aria-hidden="true" />
           </a>
         </motion.div>
         <motion.div
@@ -130,7 +133,7 @@ export const Intro = () => {
             aria-label={aria.navigation.link.replace("{{section}}", "about")}
           >
             <span className="mb-4 sm:mb-0">{cta}</span>
-            <BsArrowDown className="text-4xl sm:text-2xl animate-bounce group-hover:stroke-1 transition" />
+            <BsArrowDown aria-hidden="true" className="text-4xl sm:text-2xl animate-bounce group-hover:stroke-1 transition" />
           </Link>
         </motion.div>
       </div>

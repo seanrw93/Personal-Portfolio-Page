@@ -60,7 +60,12 @@
         "link": "Naviguer vers la section {{section}}",
         "github": "Visitez mon profil GitHub",
         "linkedin": "Visitez mon profil LinkedIn",
-        "scrollToTop": "Retour en haut"
+        "scrollToTop": "Retour en haut",
+        "menuToggle": "Ouvrir ou fermer le menu de navigation",
+        "translationButton": "Sélecteur de langue",
+        "downloadCv": "Télécharger le CV (PDF)",
+        "liveDemo": "Voir la démo en ligne de {{title}}",
+        "githubProject": "Voir le code source de {{title}} sur GitHub"
       }
     },
     "heading": {

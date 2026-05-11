@@ -8,7 +8,7 @@ import { BsGithub, BsLinkedin, BsEnvelopeAt } from "react-icons/bs";
 const Footer = () => {
   const { translations } = useTranslation();
   const { footerContent, modal } = translations?.common?.footer || {};
-  
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const modalSectionsArray =
@@ -33,12 +33,12 @@ const Footer = () => {
     <>
       <footer className="footer">
         <div className="footer-content">
-          <h2 className="footer__cta">
+          <p className="footer__cta">
             {footerContent?.cta}
-          </h2>
+          </p>
           <div className="footer__contact">
             <a href="mailto:s.roennau_wergen@proton.me" aria-label="Email">
-              <BsEnvelopeAt size={24} />
+              <BsEnvelopeAt size={24} aria-hidden="true" />
             </a>
             <a
               href="https://github.com/seanrw93"
@@ -46,7 +46,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <BsGithub size={24} />
+              <BsGithub size={24} aria-hidden="true" />
             </a>
             <a
               href="https://www.linkedin.com/in/sean-roennau-wergen"
@@ -54,13 +54,13 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <BsLinkedin size={24} />
+              <BsLinkedin size={24} aria-hidden="true" />
             </a>
           </div>
           <p className="footer__text">
             &copy; {new Date().getFullYear()} Sean Roennau-Wergen · {footerContent?.allRights}
           </p>
-          <button 
+          <button
             className="footer__legal"
             onClick={() => setIsModalOpen(true)}
           >
@@ -69,9 +69,9 @@ const Footer = () => {
         </div>
       </footer>
 
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} labelId="legal-modal-title">
         <Modal.Title>
-          <h2 className="text-2xl font-bold">
+          <h2 id="legal-modal-title" className="text-2xl font-bold">
             {modal?.title}
           </h2>
         </Modal.Title>

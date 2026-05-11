@@ -59,7 +59,12 @@
         "link": "Navigate to {{section}} section",
         "github": "Visit my GitHub profile",
         "linkedin": "Visit my LinkedIn profile",
-        "scrollToTop": "Scroll to top"
+        "scrollToTop": "Scroll to top",
+        "menuToggle": "Toggle navigation menu",
+        "translationButton": "Language switcher",
+        "downloadCv": "Download CV (PDF)",
+        "liveDemo": "View live demo of {{title}}",
+        "githubProject": "View {{title}} source code on GitHub"
       }
     },
     "heading": {

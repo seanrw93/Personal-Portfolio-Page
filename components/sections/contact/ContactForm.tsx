@@ -11,7 +11,7 @@ export const ContactForm = () => {
   const { translations } = useTranslation();
   const { pending } = useFormStatus();
   const [result, formAction] = useActionState(submitMessage, null);
-  const { email, message, submit, sending, success, error } = translations.common?.contact?.form || {};
+  const { email, message, subject, submit, sending, success, error } = translations.common?.contact?.form || {};
 
   if (result?.ok === true) {
     return (
@@ -23,36 +23,46 @@ export const ContactForm = () => {
 
   return (
     <form className="contact-form" action={formAction}>
-      <input 
-        className="contact-form__input" 
-        type="email" 
+      <label htmlFor="contact-email" className="sr-only">{email}</label>
+      <input
+        id="contact-email"
+        className="contact-form__input"
+        type="email"
         name="email"
-        placeholder={email} 
+        placeholder={email}
         required
+        autoComplete="email"
       />
-      <input 
-        className="contact-form__input" 
-        type="text" 
+
+      <label htmlFor="contact-subject" className="sr-only">{subject ?? "Subject"}</label>
+      <input
+        id="contact-subject"
+        className="contact-form__input"
+        type="text"
         name="subject"
-        placeholder="Subject"
+        placeholder={subject ?? "Subject"}
+        autoComplete="off"
       />
-      <textarea 
-        className="contact-form__textarea" 
+
+      <label htmlFor="contact-message" className="sr-only">{message}</label>
+      <textarea
+        id="contact-message"
+        className="contact-form__textarea"
         name="message"
-        placeholder={message} 
+        placeholder={message}
         required
       />
-      
+
       {result?.ok === false && (
-        <div className="contact-form__description" aria-live="polite">
+        <div className="contact-form__description" aria-live="polite" role="alert">
           <p className="text-red-600 text-lg font-semibold mb-3">{error}</p>
         </div>
       )}
 
       <SubmitButton disabled={pending}>
         {pending ? sending : submit}
-        {pending && <FaSpinner className="animate-spin text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />}
-        <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
+        {pending && <FaSpinner aria-hidden="true" className="animate-spin text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />}
+        <FaPaperPlane aria-hidden="true" className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
       </SubmitButton>
     </form>
   );

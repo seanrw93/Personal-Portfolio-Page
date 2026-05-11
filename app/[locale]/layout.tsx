@@ -51,6 +51,22 @@ export async function generateMetadata({
       siteName: "Sean Roennau-Wergen Portfolio",
       locale: isFrench ? "fr_FR" : "en_US",
       type: "website",
+      images: [
+        {
+          url: "https://srw-dev.vercel.app/images/profile.jpg",
+          width: 192,
+          height: 192,
+          alt: isFrench
+            ? "Sean Roennau-Wergen — Développeur Full-Stack"
+            : "Sean Roennau-Wergen — Full-Stack Developer",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+      images: ["https://srw-dev.vercel.app/images/profile.jpg"],
     },
   };
 }
@@ -86,8 +102,8 @@ export default async function RootLayout({
         />
       </head>
         <body className={`${inter.className} bg-primary-bg text-primary-text antialiased`}>
-          <div className="background-circle background-circle--pink"></div>
-          <div className="background-circle background-circle--purple"></div>
+          <div className="background-circle background-circle--pink" aria-hidden="true"></div>
+          <div className="background-circle background-circle--purple" aria-hidden="true"></div>
           <TranslationProvider initialLocale={locale} initialTranslations={translations}>
             <ScrollToTopButton />
             <Header />

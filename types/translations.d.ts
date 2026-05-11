@@ -45,6 +45,11 @@ type Navigation = {
   github: string;
   linkedin: string;
   scrollToTop: string;
+  menuToggle: string;
+  translationButton: string;
+  downloadCv: string;
+  liveDemo: string;
+  githubProject: string;
 }
 
 type Contact = {
@@ -59,6 +64,7 @@ type Contact = {
 type ContactForm = {
   email: string;
   message: string;
+  subject: string;
   sending: string;
   submit: string;
   success: string;
