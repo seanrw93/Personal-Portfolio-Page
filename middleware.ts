@@ -7,3 +7,9 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/en', request.url));
   }
 }
+
+export const config = {
+  matcher: [
+    '/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|images|files).*)',
+  ],
+};
