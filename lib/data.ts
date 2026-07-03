@@ -12,7 +12,7 @@ export const projectsData = [
       github: "https://github.com/seanrw93/Personal-Portfolio-Page/tree/alternance",
       live: "https://srw-dev.vercel.app/",
     },
-    imageUrl: "/images/projects/portfolio.png",
+    imageUrl: "/images/projects/portfolio-1.png",
   },
   {
     title: "Spiral Sounds",
