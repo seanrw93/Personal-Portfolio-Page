@@ -107,19 +107,6 @@ export const projectsData = [
     imageUrl: "/images/projects/sportsee.png",
   },
   {
-    title: "Billed SaaS App",
-    description: {
-      en: "Debugged and improved a SaaS expense management application. Fixed critical bugs in the employee dashboard, bill submission forms, and file upload functionality. Implemented comprehensive unit and integration tests using Jest to achieve high code coverage. Enhanced the login flow and improved error handling throughout the application.",
-      fr: "Débogué et amélioré une application SaaS de gestion des notes de frais. Corrigé des bugs critiques dans le tableau de bord employé, les formulaires de soumission de factures et la fonctionnalité de téléchargement de fichiers. Implémenté des tests unitaires et d'intégration complets avec Jest pour atteindre une couverture de code élevée. Amélioré le flux de connexion et la gestion d'erreur dans toute l'application."
-    },
-    tags: ["JavaScript", "Jest", "Debugging", "Unit Testing", "Integration Testing"],
-    links: {
-      github: "https://github.com/seanrw93/Billed-app-EN",
-      live: ""
-    },
-    imageUrl: "/images/projects/billed.png",
-  },
-  {
     title: "FishEye",
     description: {
       en: "An accessible prototype site for a platform showcasing independent photographers. Developed the homepage and individual photographer pages using HTML, CSS, and vanilla JavaScript, based on provided mockups. Data was loaded dynamically from a JSON file, with display logic structured around the Factory Method pattern. Accessibility was a core focus, with full keyboard navigation and screen reader support.",
