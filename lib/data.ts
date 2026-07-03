@@ -38,7 +38,7 @@ export const projectsData = [
       github: "https://github.com/seanrw93/pokelytica",
       live: "https://pokelytica.vercel.app/",
     },
-    imageUrl: "/images/projects/pokelytca.png",
+    imageUrl: "/images/projects/pokelytica.png",
   },
   {
     title: "HRnet",
