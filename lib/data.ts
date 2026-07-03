@@ -94,19 +94,6 @@ export const projectsData = [
     imageUrl: "/images/projects/argentbank.png",
   },
   {
-    title: "SportSee",
-    description: {
-      en: "Built a fitness tracking app with React and D3 to display personalized stats like sessions, calories, and performance. Connected to a backend API I deployed, using a custom Axios service and native fetch for real-time data. Documented service functions with JSDoc for clear typing and maintainability. Followed Figma mockups closely and focused on a clean desktop experience, standardized data, and smooth user interactions.",
-      fr: "Construit une application de suivi de fitness avec React et D3 pour afficher des statistiques personnalisées telles que les sessions, les calories et les performances. Connecté à une API backend que j'ai déployée, en utilisant un service Axios personnalisé et fetch natif pour des données en temps réel. Documenté les fonctions du service avec JSDoc pour une typage clair et une maintenabilité accrue. Suivi de près les maquettes Figma en mettant l'accent sur une expérience de bureau propre, des données standardisées et des interactions utilisateur fluides."
-    },
-    tags: ["React", "D3", "Fetch", "REST API", "JSDoc", "Figma"],
-    links: {
-      github: "https://github.com/seanrw93/sportsee-frontend",
-      live: ""
-    },
-    imageUrl: "/images/projects/sportsee.png",
-  },
-  {
     title: "FishEye",
     description: {
       en: "An accessible prototype site for a platform showcasing independent photographers. Developed the homepage and individual photographer pages using HTML, CSS, and vanilla JavaScript, based on provided mockups. Data was loaded dynamically from a JSON file, with display logic structured around the Factory Method pattern. Accessibility was a core focus, with full keyboard navigation and screen reader support.",
