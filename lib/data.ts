@@ -2,6 +2,19 @@ import React from "react";
 
 export const projectsData = [
   {
+    title: "SRW UI Kit",
+    description: {
+      en: "A React 18 component library extracted from the srw-dev production site, built with Vite, TypeScript, and React Router. Includes primitives, containers, patterns, and layout components, each documented and tested in isolation with Storybook alongside a full-page showcase app.",
+      fr: "Une bibliothèque de composants React 18 extraite du site de production srw-dev, construite avec Vite, TypeScript et React Router. Comprend des primitives, des conteneurs, des patterns et des composants de mise en page, chacun documenté et testé de façon isolée avec Storybook, accompagnés d'une application de démonstration en pleine page."
+    },
+    tags: ["React", "TypeScript", "Vite", "SCSS", "Storybook", "Design System"],
+    links: {
+      github: "https://github.com/seanrw93/srw-ui-kit-react",
+      live: "https://srw-ui-kit-react.vercel.app",
+    },
+    imageUrl: "/images/projects/srw-ui.png",
+  },
+  {
     title: "Portfolio Website",
     description: {
       en: "Personal site built with Next.js to showcase my profile, projects, and background. Fully responsive design with SEO and performance optimizations. Includes a working contact form with automatic notifications via the API.",
