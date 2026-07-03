@@ -139,7 +139,7 @@ export const skillsData = [
   "HTML5", "CSS3", "Sass", "JavaScript (ES6+)", "TypeScript",
 
   // Frontend
-  "React", "Next.js", "Redux Toolkit", "Tailwind CSS", "Framer Motion", "Vite",
+  "React", "Next.js", "Angular", "Redux Toolkit", "Tailwind CSS", "Framer Motion", "Vite",
 
   // Backend
   "Node.js", "Express", "REST APIs", "PostgreSQL",
