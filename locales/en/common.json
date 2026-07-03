@@ -14,23 +14,24 @@
         "name": "I'm Sean",
         "greeting": "Welcome to my personal portfolio website.",
         "rolePrefix": "I'm a",
-        "role": "Full-Stack Developer",
-        "freelance": "Front-end at heart, back-end by necessity",
+        "role": "Front-End Developer",
+        "freelance": "Front-end specialist, full-stack when it counts",
         "specialisedIn": "specialised in",
-        "description": "scalable, accessible, and full-stack JavaScript applications.",
+        "description": "accessible, high-performance front-end interfaces.",
         "focus": "My focus is"
       },
       "cta": "Explore my work"
     },
     "about": {
-      "p1": "Based in Paris, I'm a <span class=\"font-semibold\">trilingual full-stack developer</span> (French, English, German) with a background in <span class=\"font-semibold\">teaching and professional communication</span>. I transitioned into web development in 2022, starting from the front-end before progressively building out my <span class=\"font-semibold\">back-end and full-stack expertise</span>.",
-      "p2": "In 2023, I joined a <span class=\"font-semibold\">two-year work-study program</span> while working at <span class=\"font-semibold\">Abeille Assurances</span> as a <span class=\"font-semibold\">front-end developer / web integrator</span>. There I contributed to high-visibility projects, design systems, and UI consistency across large-scale platforms, while continuing to develop my skills on the back end.",
-      "p3": "My stack spans both sides: <span class=\"font-semibold\">React, Next.js, and TypeScript</span> on the front, and <span class=\"font-semibold\">Node.js, Express, and PostgreSQL</span> on the back. I build REST APIs, handle authentication flows, manage databases, and connect everything through clean, maintainable architecture.",
-      "p4": "I approach development with a focus on <span class=\"font-semibold\">maintainability, accessibility, and performance</span>, whether that's structuring a component library or designing a secure server-side flow. I enjoy working across the stack and collaborating closely with product, UX, and back-end teams.",
-      "p5": "I'm currently open to <span class=\"font-semibold\">full-stack and front-end opportunities</span> where clean code, performance, and collaboration across the stack are valued."    },
+      "p1": "Based in Paris, I'm a <span class=\"font-semibold\">trilingual front-end developer</span> (French, English, German) with a background in <span class=\"font-semibold\">teaching and professional communication</span>. I moved into web development in 2022, and front-end has been my focus ever since, with backend fundamentals (Node.js, REST APIs, PostgreSQL) picked up along the way.",
+      "p2": "In 2023, I joined a <span class=\"font-semibold\">two-year work-study program</span>, working at <span class=\"font-semibold\">Abeille Assurances</span> as a <span class=\"font-semibold\">front-end developer / web integrator</span>. I worked on high-visibility projects there, helping evolve design systems and keep the UI consistent across large platforms.",
+      "p3": "<span class=\"font-semibold\">React, Next.js, and TypeScript</span> are where I spend most of my time: building component libraries, wiring up state, and sweating the details that make an interface feel solid. I'm just as comfortable with <span class=\"font-semibold\">Node.js, Express, and PostgreSQL</span> when a feature calls for a REST API, an auth flow, or a database schema, but the front-end is where I go deep.",
+      "p4": "I care about accessibility and long-term maintainability as much as visual polish, whether that's structuring a <span class=\"font-semibold\">component library</span>, refining a <span class=\"font-semibold\">design system</span>, or making sure a modal works as well for a screen reader as it does for a mouse. Getting there means collaborating closely with product, UX, and back-end teams.",
+      "p5": "I finished my <span class=\"font-semibold\">M2 in Software Development (RNCP 7)</span> at OpenClassrooms and I'm now looking for a full-time <span class=\"font-semibold\">front-end role (CDI)</span>, ideally somewhere that treats component architecture, accessibility, and design systems as more than an afterthought."
+    },
     "contact": {
       "title": "Get in Touch",
-      "description": "I'm currently open to full-stack and front-end opportunities. Whether you have a role in mind, want to discuss a project, or just want to say hello, feel free to reach out!",
+      "description": "I'm currently looking for a full-time front-end position (CDI). Whether you have a role in mind, want to discuss a project, or just want to say hello, feel free to reach out!",
       "email": "You can contact me via the form below",
       "linkedin": "or connect with me on LinkedIn ",
       "lookingForward": "I look forward to hearing from you!",
@@ -70,7 +71,7 @@
     },
     "footer": {
       "footerContent": {
-        "cta": "Open to full-stack & front-end opportunities",
+        "cta": "Open to full-time front-end opportunities (CDI)",
         "allRights": "All rights reserved",
         "legalNotice": "Legal Notice"
       },
