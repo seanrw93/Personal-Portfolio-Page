@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { SkillsTags } from "@/components/ui/SkillsTags";
 import { BsGithub, BsBoxArrowUpRight} from "react-icons/bs";
+import { SiAngular } from "react-icons/si";
 
 type ProjectCardProps = {
   title: string;
@@ -13,6 +14,7 @@ type ProjectCardProps = {
   link: {
     github: string;
     live: string;
+    secondary?: string;
   } | null;
   imageUrl: string;
   index: number;
@@ -80,14 +82,25 @@ export const ProjectCard = ({
             >
               <BsBoxArrowUpRight size={24} aria-hidden="true" />
             </a>
-            <a 
-              href={link?.github || "#"} 
+            <a
+              href={link?.github || "#"}
               className={`project-card__link ${!link?.github ? "project-card__link--disabled" : ""}`}
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
             >
               <BsGithub size={24} aria-hidden="true" />
             </a>
+            {link?.secondary && (
+              <a
+                href={link.secondary}
+                className="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`View the Angular version of ${title} on GitHub`}
+              >
+                <SiAngular size={24} aria-hidden="true" />
+              </a>
+            )}
           </div>
         </div>
         <p

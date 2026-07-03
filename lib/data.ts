@@ -11,6 +11,7 @@ export const projectsData = [
     links: {
       github: "https://github.com/seanrw93/srw-ui-kit-react",
       live: "https://srw-ui-kit-react.vercel.app",
+      secondary: "https://github.com/seanrw93/srw-ui-kit-ng",
     },
     imageUrl: "/images/projects/srw-ui.png",
   },
